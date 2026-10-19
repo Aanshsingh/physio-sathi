@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tertiary-container": "#008376", "surface-variant": "#d3e4fe", "outline-variant": "#bcc9cb", "on-tertiary-container": "#f4fffb", "on-error": "#ffffff", "primary-fixed-dim": "#67d6e4", "primary": "#00666f", "inverse-surface": "#213145", "tertiary-fixed-dim": "#6fd8c8", "secondary-fixed": "#d5e3ff", "primary-container": "#00818c", "error": "#ba1a1a", "surface-container-highest": "#d3e4fe", "on-primary-fixed": "#001f23", "on-secondary-fixed": "#001c3b", "on-primary": "#ffffff", "on-secondary": "#ffffff", "on-tertiary-fixed-variant": "#005048", "surface-tint": "#006972", "background": "#f8f9ff", "surface-container-low": "#eff4ff", "surface-container-high": "#dce9ff", "on-secondary-fixed-variant": "#314769", "tertiary": "#00685d", "on-error-container": "#93000a", "surface": "#f8f9ff", "error-container": "#ffdad6", "inverse-on-surface": "#eaf1ff", "secondary": "#495f82", "on-surface-variant": "#3d494a", "secondary-fixed-dim": "#b1c7f0", "on-background": "#0b1c30", "secondary-container": "#bfd5fe", "tertiary-fixed": "#8cf5e4", "inverse-primary": "#67d6e4", "surface-container": "#e5eeff", "on-tertiary": "#ffffff", "surface-dim": "#cbdbf5", "outline": "#6d797b", "on-primary-container": "#f6feff", "on-surface": "#0b1c30", "on-tertiary-fixed": "#00201c", "on-primary-fixed-variant": "#004f56", "primary-fixed": "#8df2ff", "surface-bright": "#f8f9ff", "on-secondary-container": "#465c7f", "surface-container-lowest": "#ffffff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1rem", "margin": "1rem", "gutter-lg": "2rem", "space-xl": "2.5rem", "gutter-md": "1.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-md": "2rem", "margin-lg": "3rem" }, fontFamily: { "label-sm": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, fontSize: { "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "700" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-lg": ["15px", { "lineHeight": "20px", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,37,69,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors text-on-surface" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><div class="flex items-center gap-space-xs"><img alt="Physio Sathi Brand Logo" class="h-7 w-auto object-contain hidden sm:inline" src="https://lh3.googleusercontent.com/aida/AEtjO1WmPUQgfTQAUUGhI44PrDknfBzGkJhdQWJoEP7TJfehN6XnXK6IkssvZ8zm-e6raLHWTgh349MSCJFUQN5iyjMEvA_hpO27jNm0EwtZC8BmqcpbR44dPYj5dEzXBxwQ1GRsWKnzNT0PYtLEsDjkXcq4qG6SE0txanBTdfSVi199N9-As5XzSLifyIES9EKKbmBvxz2C4-CYg9DTnO2uuMRFrGHzGOAUp7v8c-Gpor0sVSsqX-kNypTU3W8"/><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate max-w-[200px]">Results</h1></div></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors text-on-surface-variant"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-11 h-11 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB97du81bDq88aOqizInqAMnzI51lgU9eJLNcBMMwNLlcWFJi4BsL8tJtpXoJneicERSQJ5eeq7zrkExe-P2fRY64hugTw9nQSA-ERMSuZO66jAClgXTXkUcSsjS-c0AQKvZfafW6ptG77LnOgOv-r6mIEsYcwuMYJgcDNW4fB8db09gDtFsUbO6f9P_Yu2PI4Cnx4M8CE9hgh5i2AjyZRchtnKLthejEo7jKiDk9_gV-AqZ1hJS3nv"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface min-h-screen pb-safe"><div class="flex flex-col w-full pb-10">
+<!-- Interactive State Switcher for UX Review / Demo -->
+<div class="px-margin pt-space-xs pb-space-sm bg-surface-container-low shadow-sm mb-space-sm">
+<div class="flex items-center justify-between gap-space-xs overflow-x-auto no-scrollbar py-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0 uppercase tracking-wider">Demo States:</span>
+<div class="flex gap-1 shrink-0 bg-surface-container p-0.5 rounded-full">
+<button class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-primary text-on-primary transition-all shadow-sm" id="tab-results" onclick="switchView('results')">
+          Results (7)
+        </button>
+<button class="px-2.5 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" id="tab-loading" onclick="switchView('loading')">
+          Loading
+        </button>
+<button class="px-2.5 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" id="tab-empty" onclick="switchView('empty')">
+          Empty (5km)
+        </button>
+<button class="px-2.5 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" id="tab-error" onclick="switchView('error')">
+          Error
+        </button>
+</div>
+</div>
+</div>
+<!-- Search Summary & Context Strip -->
+<div class="px-margin mb-space-sm flex flex-col gap-space-xs">
+<!-- Active Query Pill & Location Selector -->
+<div class="flex items-center justify-between bg-surface-container-lowest p-space-sm rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-8 h-8 rounded-full bg-primary-container/10 flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Indiranagar</span>
+<span class="font-label-md text-label-md text-primary font-medium">(≤ 3 km)</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Knee / Post-Op Rehab • ₹600 - ₹1,200</span>
+</div>
+</div>
+<button aria-label="Edit Query" class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:bg-surface-container-highest transition-colors shrink-0">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+<!-- Filter Scroll Strip -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-1">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[14px]">home</span>
+<span>Home Visit</span>
+<span class="material-symbols-outlined text-[14px]">check</span>
+</button>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm shrink-0 hover:bg-surface-container">
+<span>Under ₹1,000</span>
+</button>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm shrink-0 hover:bg-surface-container">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>Immediate Available</span>
+</button>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm shrink-0 hover:bg-surface-container">
+<span>Female Doctor</span>
+</button>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm shrink-0 hover:bg-surface-container">
+<span class="material-symbols-outlined text-[14px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.5+ Rated</span>
+</button>
+</div>
+</div>
+<!-- State 1: Results Active View -->
+<div class="flex flex-col w-full px-margin gap-space-md" id="view-results">
+<!-- Count & Trust Banner -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface font-bold flex items-center gap-1.5">
+<span>7 Verified Physios Nearby</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-tertiary-container/10 text-tertiary font-semibold">IAP Accredited</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">swap_vert</span> Sort: Match
+        </span>
+</div>
+<!-- Trust Assurance Box -->
+<div class="p-space-sm rounded-xl bg-surface-container-high/60 flex items-start gap-space-xs">
+<span class="text-base select-none">💡</span>
+<div class="flex flex-col">
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+            Each profile is verified via <strong class="text-on-surface font-semibold">Indian Association of Physiotherapists (IAP)</strong> &amp; Karnataka State Council.
+          </p>
+<span class="font-label-sm text-label-sm text-tertiary mt-0.5">सभी फिजियोथेरेपिस्ट प्रमाणित हैं • Safe &amp; Sanitized Care</span>
+</div>
+</div>
+</div>
+<!-- Card 1: Top Match (Dr. Ananya Rao) -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<!-- Top Match Badge Ribbon -->
+<div class="flex items-center justify-between mb-space-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+          98% Match for Knee Post-TKR
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">near_me</span> 1.2 km away
+        </span>
+</div>
+<!-- Main Profile Header -->
+<div class="flex items-start gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-16 h-16 rounded-xl object-cover" data-alt="Warm and confident Indian female doctor in clinical teal scrubs with a stethoscope and professional ID badge smiling gently against a bright clinical wellness clinic in Indiranagar Bengaluru" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpw3JjWy7N3xHr7JGdvXoVoJaB6czmMkvR1GZlsDZyP_oaM8otIJ8Bz0qrXZVOFjUhA7M4j3_PYth-DnY_lKT-mkuPeX4ZAY30bHBdN4Emk-CRu62hE3qxIoK_0TlLdg7uOao9noJc8yQo7enYgqvKIflY0I6h9RVU5BnyH_lqbThYR778oBd5Z_RBmL1hAklOlihpPuJFXY9Y48KUcVeZPTMLWZKAs-07DZg5_-eFftJzsik1QEEY"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[12px]">check</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Dr. Ananya Rao</h2>
+<span class="font-label-sm text-label-sm text-primary font-semibold">MPT (Ortho), MIAP • 9 yrs exp.</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Ex-Manipal Hospital Ortho Wing</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.9</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(124 knee rehab reviews)</span>
+</div>
+</div>
+</div>
+<!-- Key Value Badges -->
+<div class="flex flex-wrap gap-1.5 mt-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm">
+          Home Visit &amp; Clinic
+        </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm">
+          Indiranagar • Domlur • HAL
+        </span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/50 text-on-secondary-container font-label-sm text-label-sm">
+          Carries Portable TENS Unit
+        </span>
+</div>
+<!-- Match Explanation (Why this result) -->
+<div class="mt-space-sm p-space-xs rounded-lg bg-surface-container-low text-on-surface-variant">
+<div class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary shrink-0 mt-0.5">thumb_up</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong class="font-semibold text-primary">Why this match:</strong> Closest to 100ft Road (1.2 km). 40+ documented Post-TKR knee recoveries with zero re-admissions.
+          </p>
+</div>
+</div>
+<!-- Price & Slot Breakdown -->
+<div class="mt-space-sm flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">₹850</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ home session</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary">Clinic session: ₹600 • No travel fees</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+            Tomorrow, 9:00 AM
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Next available home slot</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="grid grid-cols-5 gap-space-xs mt-space-md">
+<a class="col-span-2 h-12 rounded-xl bg-tertiary-fixed/30 hover:bg-tertiary-fixed/50 text-on-tertiary-fixed-variant font-label-lg text-label-lg flex items-center justify-center gap-1 transition-colors" href="https://wa.me/919876543210">
+<span class="material-symbols-outlined text-[20px] text-tertiary">chat</span>
+<span>WhatsApp</span>
+</a>
+<button class="col-span-3 h-12 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+<span>View &amp; Enquire</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Dr. Rajesh Kulkarni (Budget Friendly Home Specialist) -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px] text-primary">workspace_premium</span>
+          Value Choice • Home Specialist
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">near_me</span> 2.1 km away
+        </span>
+</div>
+<!-- Profile Header -->
+<div class="flex items-start gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-16 h-16 rounded-xl object-cover" data-alt="Portrait of an experienced male Indian physical therapist in his late thirties wearing navy polo shirt and medical credentials badge standing in a modern clinic environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWF4_JiTLDQ9uULaRxVdgpiLrHcWuU0wC-0ktPfpKpVBYplRLoJ6NT87G1o_khR1mxV1EHBwz-9ZnNKZezKoc_JpgQWh2RXY8esGlU4YnOI0FsdvI-c6n21Ik_5hk1kFjX8RchvzwweLChdTU819U9IzinHoIoRrX6dIAospKnOij6OAMIpCJ5UP3iI1NMX0Ug5SeZdkf3myqmpPlAeiIqyyrCgAfxinWD0DspE6Jef9l2ZgHPDcbR"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[12px]">check</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Dr. Rajesh Kulkarni</h2>
+<span class="font-label-sm text-label-sm text-primary font-semibold">BPT, MIAP • 7 yrs experience</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Former Sports Rehab Specialist</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.8</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(89 happy patients)</span>
+</div>
+</div>
+</div>
+<!-- Badges -->
+<div class="flex flex-wrap gap-1.5 mt-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm">
+          Home Visit Only
+        </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm">
+          Indiranagar • Koramangala • Ulsoor
+        </span>
+</div>
+<!-- Match Explanation -->
+<div class="mt-space-sm p-space-xs rounded-lg bg-surface-container-low text-on-surface-variant">
+<div class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary shrink-0 mt-0.5">medical_services</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong class="font-semibold text-primary">Why this match:</strong> Budget-friendly home visit. Brings calibrated ultrasound therapy &amp; mobile IFT equipment right to your doorstep.
+          </p>
+</div>
+</div>
+<!-- Price & Slot -->
+<div class="mt-space-sm flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">₹750</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ home visit</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Includes all modality setup</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+            Today, 5:00 PM
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Same-day urgent slot</span>
+</div>
+</div>
+<!-- Action -->
+<div class="mt-space-md">
+<button class="w-full h-12 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+<span>View Profile &amp; Enquire</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Dr. Sneha Verma (Senior Consultant Neuro) -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px] text-secondary">psychology</span>
+          Senior Neuro &amp; Geriatric Specialist
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">near_me</span> 2.8 km away
+        </span>
+</div>
+<!-- Profile Header -->
+<div class="flex items-start gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-16 h-16 rounded-xl object-cover" data-alt="Portrait of senior female Indian physiotherapist with gentle warm expression dressed in formal white medical coat with stethoscope in a clean rehabilitation centre" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh_xfcvpmghEr669YhG85vGLPRm_fqdK7uiqtwmwmAGjWzSSArHFcA-cfWQt3voSlzqkMtSJuh1b9eSbKeWvqusJvGgyVwFcBSGgPCG323tFcRKANNavsV_ctmKt1LrwCrZy_-RhpzEPgWR4nehQUB_moZmp3CCotUIsuL-vxfnL0YqwRGK_N5vN_Rw9-zHrjEjoYSZn_NaG7EgPVdCD8uOdT4-23_u4ZJIa6W7Qpj_36C8Ru-7SmP"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[12px]">check</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Dr. Sneha Verma</h2>
+<span class="font-label-sm text-label-sm text-primary font-semibold">MPT (Neuro-Rehab), MIAP • 14 yrs</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Lead Consultant, Elder Care Guild</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">5.0</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(62 stroke &amp; fall reviews)</span>
+</div>
+</div>
+</div>
+<!-- Badges -->
+<div class="flex flex-wrap gap-1.5 mt-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm">
+          Clinic &amp; Home Visits
+        </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm">
+          Indiranagar • CV Raman Nagar
+        </span>
+</div>
+<!-- Match Explanation -->
+<div class="mt-space-sm p-space-xs rounded-lg bg-surface-container-low text-on-surface-variant">
+<div class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary shrink-0 mt-0.5">elderly</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong class="font-semibold text-primary">Specialty focus:</strong> Expert in post-operative mobility for elderly patients, stroke rehabilitation, and gait re-training with gait sensors.
+          </p>
+</div>
+</div>
+<!-- Price & Slot -->
+<div class="mt-space-sm flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">₹1,100</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ home session</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Comprehensive 60-min assessment</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            Thu, 11:30 AM
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Slots filling fast</span>
+</div>
+</div>
+<!-- Action -->
+<div class="mt-space-md">
+<button class="w-full h-12 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+<span>View Profile &amp; Enquire</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Need Help Finding The Right Match Prompt -->
+<div class="p-space-md rounded-xl bg-gradient-to-r from-primary-container/10 via-surface-container-low to-tertiary-container/10 flex items-center justify-between gap-space-sm shadow-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Need help choosing?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Speak to a Physio Sathi Care Navigator free on call.</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold mt-0.5">हमारे केयर गाइड से बात करें (Toll Free)</span>
+</div>
+<button class="h-11 px-4 rounded-xl bg-surface-container-lowest text-primary font-label-lg text-label-lg shadow-sm hover:bg-surface-container transition-colors shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+<span>Call</span>
+</button>
+</div>
+</div>
+<!-- State 2: Loading / Shimmer State (Hidden by default) -->
+<div class="hidden flex-col w-full px-margin gap-space-md" id="view-loading">
+<!-- Searching animation banner -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center text-primary animate-spin">
+<span class="material-symbols-outlined text-[20px]">radar</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Scanning within 3 km of Indiranagar...</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Verifying active home-visit schedules &amp; clinical licenses</span>
+</div>
+</div>
+<!-- Skeleton Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm animate-pulse">
+<div class="h-4 w-1/3 bg-surface-container-high rounded"></div>
+<div class="flex gap-space-sm">
+<div class="w-16 h-16 rounded-xl bg-surface-container-high shrink-0"></div>
+<div class="flex-1 flex flex-col gap-2">
+<div class="h-5 w-3/4 bg-surface-container-high rounded"></div>
+<div class="h-3 w-1/2 bg-surface-container-high rounded"></div>
+<div class="h-3 w-1/3 bg-surface-container-high rounded"></div>
+</div>
+</div>
+<div class="h-12 w-full bg-surface-container-high rounded-lg mt-1"></div>
+<div class="flex justify-between items-center mt-2">
+<div class="h-6 w-24 bg-surface-container-high rounded"></div>
+<div class="h-6 w-28 bg-surface-container-high rounded"></div>
+</div>
+<div class="h-12 w-full bg-surface-container-high rounded-xl mt-2"></div>
+</div>
+<!-- Skeleton Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm animate-pulse">
+<div class="h-4 w-2/5 bg-surface-container-high rounded"></div>
+<div class="flex gap-space-sm">
+<div class="w-16 h-16 rounded-xl bg-surface-container-high shrink-0"></div>
+<div class="flex-1 flex flex-col gap-2">
+<div class="h-5 w-2/3 bg-surface-container-high rounded"></div>
+<div class="h-3 w-1/2 bg-surface-container-high rounded"></div>
+<div class="h-3 w-1/4 bg-surface-container-high rounded"></div>
+</div>
+</div>
+<div class="h-12 w-full bg-surface-container-high rounded-xl mt-2"></div>
+</div>
+</div>
+<!-- State 3: Empty State (Radius Expansion UX) -->
+<div class="hidden flex-col w-full px-margin items-center text-center pt-space-lg pb-space-xl" id="view-empty">
+<div class="w-20 h-20 rounded-full bg-surface-container flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[36px]">travel_explore</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-space-xs">
+      No Physios Found in 3 km
+    </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mb-space-md">
+      We couldn't find available post-op knee specialists within this exact tight radius for under ₹1,000.
+    </p>
+<!-- Suggestion Action Card -->
+<div class="w-full bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm text-left mb-space-md">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">explore</span>
+<span class="font-label-lg text-label-lg font-bold">Suggested: Expand search to 5 km</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        This instantly unlocks <strong>14 verified therapists</strong> serving Domlur, Ulsoor, and Koramangala who can travel to Indiranagar.
+      </p>
+<button class="h-12 w-full rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm hover:bg-primary-container transition-colors" onclick="switchView('results')">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Expand to 5 km (14 Results)</span>
+</button>
+</div>
+<!-- Secondary Helper -->
+<button class="px-4 py-2 font-label-md text-label-md text-primary font-semibold flex items-center gap-1" onclick="switchView('results')">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Reset all filters to defaults</span>
+</button>
+</div>
+<!-- State 4: Error State (Tap to Retry) -->
+<div class="hidden flex-col w-full px-margin items-center text-center pt-space-lg pb-space-xl" id="view-error">
+<div class="w-20 h-20 rounded-full bg-error-container/40 flex items-center justify-center text-error mb-space-md">
+<span class="material-symbols-outlined text-[36px]">wifi_off</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-space-xs">
+      Connection Interrupted
+    </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mb-space-lg">
+      Unable to reach Physio Sathi directory. Please check your internet or mobile network and try again.
+    </p>
+<div class="flex flex-col w-full max-w-xs gap-space-xs">
+<button class="h-12 w-full rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm transition-all" id="retry-btn" onclick="simulateReload()">
+<span class="material-symbols-outlined text-[18px]" id="retry-icon">refresh</span>
+<span id="retry-label">Tap to Retry</span>
+</button>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Error Code: ERR_TIMEOUT_BLR_03</span>
+</div>
+</div>
+</div>
+<script>
+  function switchView(state) {
+    const states = ['results', 'loading', 'empty', 'error'];
+    states.forEach(s => {
+      const container = document.getElementById(`view-${s}`);
+      const tab = document.getElementById(`tab-${s}`);
+      
+      if (s === state) {
+        container.classList.remove('hidden');
+        tab.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+        tab.classList.remove('text-on-surface-variant');
+      } else {
+        container.classList.add('hidden');
+        tab.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        tab.classList.add('text-on-surface-variant');
+      }
+    });
+  }
+
+  function simulateReload() {
+    const icon = document.getElementById('retry-icon');
+    const label = document.getElementById('retry-label');
+    icon.classList.add('animate-spin');
+    label.innerText = 'Connecting...';
+    
+    setTimeout(() => {
+      icon.classList.remove('animate-spin');
+      label.innerText = 'Tap to Retry';
+      switchView('results');
+    }, 800);
+  }
+</script></main></body></html>

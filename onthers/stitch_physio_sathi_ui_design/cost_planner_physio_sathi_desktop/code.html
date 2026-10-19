@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-container":"#bfd5fe","outline-variant":"#bcc9cb","on-tertiary-container":"#f4fffb","on-background":"#0b1c30","tertiary-fixed":"#8cf5e4","primary-container":"#00818c","error-container":"#ffdad6","on-primary-fixed-variant":"#004f56","on-secondary-container":"#465c7f","on-surface":"#0b1c30","primary-fixed-dim":"#67d6e4","background":"#f8f9ff","inverse-primary":"#67d6e4","on-primary-fixed":"#001f23","on-error":"#ffffff","secondary-fixed-dim":"#b1c7f0","on-secondary-fixed-variant":"#314769","surface-container-high":"#dce9ff","secondary-fixed":"#d5e3ff","surface":"#f8f9ff","tertiary":"#00685d","on-secondary-fixed":"#001c3b","surface-tint":"#006972","on-secondary":"#ffffff","inverse-on-surface":"#eaf1ff","on-error-container":"#93000a","error":"#ba1a1a","surface-container-lowest":"#ffffff","inverse-surface":"#213145","secondary":"#495f82","on-tertiary-fixed-variant":"#005048","on-surface-variant":"#3d494a","tertiary-fixed-dim":"#6fd8c8","surface-dim":"#cbdbf5","surface-container":"#e5eeff","on-tertiary":"#ffffff","primary-fixed":"#8df2ff","on-primary-container":"#f6feff","on-primary":"#ffffff","on-tertiary-fixed":"#00201c","surface-variant":"#d3e4fe","primary":"#00666f","surface-container-low":"#eff4ff","surface-container-highest":"#d3e4fe","surface-bright":"#f8f9ff","outline":"#6d797b","tertiary-container":"#008376"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"margin-md":"2rem","space-md":"1rem","gutter-lg":"2rem","space-sm":"0.5rem","space-xl":"2.5rem","gutter-md":"1.5rem","space-xs":"0.25rem",gutter:"1rem","space-lg":"1.5rem",margin:"1rem","margin-lg":"3rem"},fontFamily:{"display-lg":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"]},fontSize:{"display-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-lg":["15px",{lineHeight:"20px",fontWeight:"600"}],"headline-md":["22px",{lineHeight:"30px",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"16px",letterSpacing:"0.03em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"26px",fontWeight:"600"}],"display-lg-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"22px",fontWeight:"400"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"600"}],"body-sm":["14px",{lineHeight:"20px",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,37,69,0.06)]"><div class="h-20 max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg flex-shrink-0"><div class="flex items-center gap-space-sm cursor-pointer"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">healing</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-tight">Physio Sathi</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">फ़िज़ियो साथी • Rehab &amp; Care Companion</span></div></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-surface-container text-on-surface cursor-pointer hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-primary text-[18px]">location_on</span><span class="font-label-md text-label-md font-semibold text-on-surface">Indiranagar, Bengaluru</span><span class="material-symbols-outlined text-outline text-[16px]">expand_more</span></div></div><nav class="hidden lg:flex items-center gap-space-md" data-active-classes="bg-primary-container text-on-primary-container font-label-md text-label-md px-3 py-1.5 rounded-lg"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="home" href="#">Home</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="find-physio" href="#">Find Physio</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="equipment-hub" href="#">Equipment Hub</a><a aria-current="page" class="transition-colors bg-primary-container text-on-primary-container font-label-md text-label-md px-3 py-1.5 rounded-lg" data-path="cost-planner" href="#">Cost Planner</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="ai-assistant" href="#">AI Assistant</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="clinician-demo-view" href="#">Clinician Demo View</a></nav><div class="flex items-center gap-space-md flex-shrink-0"><div class="hidden sm:flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-low text-tertiary cursor-pointer hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[16px] text-tertiary">call</span><div class="flex flex-col text-left"><span class="font-label-sm text-label-sm leading-none text-tertiary">Toll-Free Helpline</span><span class="font-label-md text-label-md font-bold leading-tight text-on-surface">1800-890-7497</span></div></div><button aria-label="Notifications" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center cursor-pointer shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-160px)]"><div class="flex flex-col w-full">
+<!-- Interactive State Hub & Top Hero Metric Header -->
+<section class="w-full max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg pt-6 pb-4">
+<!-- Breadcrumb & Localization Pill -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-3">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<span class="hover:text-primary cursor-pointer transition-colors">Home</span>
+<span>/</span>
+<span class="hover:text-primary cursor-pointer transition-colors">Financial Transparency</span>
+<span>/</span>
+<span class="text-on-surface font-semibold">Recovery Cost Planner</span>
+</div>
+<!-- State Simulator Switcher Pills -->
+<div class="flex items-center gap-1.5 p-1 bg-surface-container rounded-full">
+<button class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container-lowest text-primary font-bold shadow-sm transition-all flex items-center gap-1" id="btn-state-active" onclick="switchPlannerState('active')">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+          Active Calculator
+        </button>
+<button class="font-label-sm text-label-sm px-3 py-1 rounded-full text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1" id="btn-state-missing" onclick="switchPlannerState('missing')">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+          Missing Inputs Alert
+        </button>
+<button class="font-label-sm text-label-sm px-3 py-1 rounded-full text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1" id="btn-state-loading" onclick="switchPlannerState('loading')">
+<span class="material-symbols-outlined text-[14px]">sync</span>
+          Loading State
+        </button>
+</div>
+</div>
+<!-- Master Header Block with Devanagari Pair -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md pb-6 border-b border-surface-container">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-[16px]">account_balance_wallet</span>
+          NABH &amp; IAP Guideline Benchmark • FY 2025-26
+        </div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight leading-tight">
+          Smart Recovery Cost Planner
+          <span class="text-primary font-normal block sm:inline sm:ml-2 text-headline-lg font-headline-lg">पारदर्शी लागत योजना</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2 leading-relaxed">
+          Calculate total recovery out-of-pocket expenses across 4 care pathways and avoid hidden healthcare shocks for your family.
+        </p>
+</div>
+<!-- Live City Currency Assurance Card -->
+<div class="flex items-center gap-3 bg-surface-container-low p-3 px-4 rounded-xl shadow-sm border border-surface-container-high flex-shrink-0">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center font-bold">
+          ₹
+        </div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Real-Time Benchmark</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Bengaluru Tier-1 Norms</span>
+</div>
+</div>
+</div>
+<!-- Rehab Presets Bar -->
+<div class="mt-4 pt-2 flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Clinical Presets:</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2 w-full md:w-auto">
+<button class="preset-btn px-4 py-2.5 rounded-xl font-label-md text-label-md text-left transition-all bg-primary text-on-primary shadow-sm flex items-center justify-between gap-2" id="preset-tkr" onclick="setPreset('tkr')">
+<div>
+<div class="font-bold leading-tight">Post-TKR (Knee) Recovery</div>
+<div class="text-[11px] opacity-90">6 weeks • Joint mobility protocol</div>
+</div>
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</button>
+<button class="preset-btn px-4 py-2.5 rounded-xl font-label-md text-label-md text-left transition-all bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-between gap-2" id="preset-neuro" onclick="setPreset('neuro')">
+<div>
+<div class="font-bold leading-tight">Stroke / Neuro Cycle</div>
+<div class="text-[11px] text-on-surface-variant">12 weeks • Motor re-training</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-transparent">check_circle</span>
+</button>
+<button class="preset-btn px-4 py-2.5 rounded-xl font-label-md text-label-md text-left transition-all bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-between gap-2" id="preset-back" onclick="setPreset('back')">
+<div>
+<div class="font-bold leading-tight">Chronic Back Rehab</div>
+<div class="text-[11px] text-on-surface-variant">4 weeks • Core stabilization</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-transparent">check_circle</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Interactive Alert Banner Container (Dynamic for Missing State) -->
+<div class="hidden w-full max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg mb-4" id="missing-alert-container">
+<div class="p-4 rounded-xl bg-error-container text-on-error-container flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-md animate-bounce-short">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[28px] text-error">report_problem</span>
+<div>
+<div class="font-headline-sm text-headline-sm font-bold">Missing Parameters Detected: Travel Distance &amp; Session Ceiling</div>
+<div class="font-body-sm text-body-sm opacity-90">
+            Caregiver opportunity cost calculations are incomplete because transit radius hasn't been verified for your locality.
+          </div>
+</div>
+</div>
+<button class="px-4 py-2 rounded-lg bg-error text-on-error font-label-md text-label-md font-bold whitespace-nowrap shadow-sm hover:opacity-90" onclick="resolveMissingAlert()">
+        Calibrate Default 4.5 km
+      </button>
+</div>
+</div>
+<!-- Main Dual-Column Desktop Dashboard Area -->
+<main class="w-full max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg py-2">
+<!-- Loading Overlay View (Hidden by default) -->
+<div class="hidden w-full p-16 rounded-2xl bg-surface-container-lowest shadow-md flex-col items-center justify-center text-center" id="loading-view">
+<div class="w-16 h-16 border-4 border-surface-container-high border-t-primary rounded-full animate-spin mb-4"></div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Re-indexing Clinician Price Models...</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-1">
+        Parsing live local physiotherapy clinic fees across Indiranagar, Koramangala, and HSR Layout against certified medical vendor equipment rates.
+      </p>
+</div>
+<!-- Active Calculation Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start" id="calculator-view">
+<!-- ===================== LEFT COLUMN (440px equivalent: lg:col-span-5) ===================== -->
+<aside class="lg:col-span-5 w-full flex flex-col gap-space-md">
+<!-- Parameter Control Card -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-3 border-b border-surface-container">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">sliders</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Care &amp; Outlay Parameters</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Adjust to simulate individual needs</span>
+</div>
+</div>
+<button class="font-label-sm text-label-sm text-primary hover:underline font-bold" onclick="resetSliders()">Reset Defaults</button>
+</div>
+<!-- Parameter 1: Number of Sessions -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1.5">
+                Physiotherapy Sessions Needed
+                <span class="material-symbols-outlined text-[16px] text-outline cursor-help" title="Standard orthopaedic protocol recommends 12 to 18 sessions post knee replacement.">info</span>
+</label>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-secondary font-bold" id="session-cycle-label">6-Week Plan</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low p-2 rounded-xl">
+<button class="w-10 h-10 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container flex items-center justify-center transition-colors shadow-sm font-bold text-headline-sm" onclick="adjustSessions(-1)">
+                -
+              </button>
+<div class="flex flex-col items-center">
+<span class="font-headline-md text-headline-md font-extrabold text-primary" id="session-count-display">15</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant -mt-1">In-person visits</span>
+</div>
+<button class="w-10 h-10 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container flex items-center justify-center transition-colors shadow-sm font-bold text-headline-sm" onclick="adjustSessions(1)">
+                +
+              </button>
+</div>
+</div>
+<!-- Parameter 2: Home Session Fee Slider -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md font-semibold text-on-surface">
+                Home Visit Therapist Fee
+              </label>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface" id="home-fee-display">₹800 <span class="font-label-sm text-label-sm font-normal text-on-surface-variant">/ session</span></span>
+</div>
+<input class="w-full h-2.5 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-primary" id="slider-home-fee" max="2500" min="400" oninput="updateCalculations()" step="50" type="range" value="800"/>
+<!-- Tier Indicators -->
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant px-1 pt-1">
+<span>Junior BPT (₹400)</span>
+<span class="font-semibold text-primary">Specialist MPT (₹800)</span>
+<span>Head of Dept (₹2,000+)</span>
+</div>
+</div>
+<!-- Parameter 3: Clinic Commute Roundtrip Cost Slider -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1">
+                Clinic Transit / Trip
+                <span class="material-symbols-outlined text-[16px] text-outline cursor-help" title="Covers local auto-rickshaw or app cab fare for patient with limited post-surgery mobility plus caregiver.">directions_car</span>
+</label>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface" id="commute-cost-display">₹120 <span class="font-label-sm text-label-sm font-normal text-on-surface-variant">roundtrip</span></span>
+</div>
+<input class="w-full h-2.5 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-primary" id="slider-commute-cost" max="600" min="50" oninput="updateCalculations()" step="10" type="range" value="120"/>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant px-1 pt-1">
+<span>Nearby Auto (₹50)</span>
+<span class="font-semibold text-secondary">Local Average (₹120)</span>
+<span>Wheelchair Van (₹600)</span>
+</div>
+</div>
+<!-- Parameter 4: Equipment Rental Duration Stepper -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md font-semibold text-on-surface">
+                Rehab Device Rental (CPM / TENS)
+              </label>
+<span class="font-label-md text-label-md text-primary font-bold" id="rental-subtotal-display">₹2,800 total</span>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<button class="rental-pill py-2 text-center rounded-lg font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" id="rent-week-2" onclick="setRentalWeeks(2)">
+                2 Wks
+              </button>
+<button class="rental-pill py-2 text-center rounded-lg font-label-md text-label-md bg-primary text-on-primary font-bold shadow-sm transition-colors" id="rent-week-4" onclick="setRentalWeeks(4)">
+                4 Wks
+              </button>
+<button class="rental-pill py-2 text-center rounded-lg font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" id="rent-week-6" onclick="setRentalWeeks(6)">
+                6 Wks
+              </button>
+<button class="rental-pill py-2 text-center rounded-lg font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" id="rent-week-8" onclick="setRentalWeeks(8)">
+                8 Wks
+              </button>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Benchmark: ₹700 / week sanitized home delivery</span>
+</div>
+<!-- Parameter 5: Equipment Outlay (Purchase) -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">shopping_bag</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">Equipment Purchase Outlay</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Continuous Passive Motion (CPM) Unit</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">₹18,000</span>
+<span class="font-label-sm text-label-sm text-tertiary block">Warranty incl.</span>
+</div>
+</div>
+</div>
+<!-- Dynamic Transparency Formula & Assumptions Card -->
+<div class="p-5 rounded-2xl bg-surface-container-low border border-surface-container-high flex flex-col gap-3">
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="material-symbols-outlined text-[20px]">functions</span>
+<span class="font-label-lg text-label-lg">Physio Sathi Total Cost Model</span>
+</div>
+<div class="font-label-sm text-label-sm p-3 rounded-lg bg-surface-container-lowest text-on-surface leading-relaxed shadow-sm font-mono">
+            Total Expense = (Visits × Session Fee) + Commute Transport + Equipment Outlay + Caregiver Opportunity Cost (~2 hrs/trip)
+          </div>
+<div class="space-y-1.5 pt-1">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary mt-0.5">verified</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Zero surcharges on peak timings or festive calendar days in Bengaluru.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary mt-0.5">verified</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Device rental incorporates free sanitary pad replacements &amp; clinical calibration.</span>
+</div>
+</div>
+</div>
+<!-- Parameter Health Checklist Widget -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">Inputs Calibration Status</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">5/5 parameters actively balanced</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-primary font-bold">Synced</span>
+</div>
+</aside>
+<!-- ===================== RIGHT COLUMN: 4 CARE PATHWAYS (lg:col-span-7) ===================== -->
+<section class="lg:col-span-7 w-full flex flex-col gap-space-md">
+<!-- Section Subtitle & Quick Insight Bar -->
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">4 Recovery Pathways Comparison</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Evaluated for clinical outcome efficiency vs. direct cash strain.</p>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">swap_horiz</span>
+            Sorted by Total Financial Impact
+          </div>
+</div>
+<!-- 2x2 Matrix Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- PATHWAY A: Home Visits Only -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-md hover:shadow-xl transition-all flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-secondary"></div>
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-secondary">Pathway A</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-surface-container text-on-surface-variant">Zero Commute</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Home Visits Only</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">घर पर पूर्ण फिजियोथेरेपी</p>
+<div class="my-4 p-3 rounded-xl bg-surface-container-low">
+<div class="flex items-baseline gap-1">
+<span class="font-display-lg text-display-lg font-extrabold text-on-surface" id="cost-path-a">₹12,000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">total outlay</span>
+</div>
+<div class="font-label-sm text-label-sm text-secondary mt-1 font-mono" id="breakdown-path-a">
+                  15 visits × ₹800 + ₹0 transport
+                </div>
+</div>
+<!-- Pathway Pros / Characteristics -->
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary mt-0.5">elderly</span>
+<span><strong>Ideal for fresh post-op:</strong> Eliminates painful vehicle ingress/egress and stair climbing.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary mt-0.5">cloud_download</span>
+<span><strong>Caregiver Time Saved:</strong> Zero lost working hours traveling to medical centers.</span>
+</li>
+</ul>
+</div>
+<div class="mt-5 pt-3 border-t border-surface-container flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Commute Risk: 0%</span>
+<button class="font-label-md text-label-md text-primary font-bold hover:underline inline-flex items-center gap-1" onclick="selectPathway('A')">
+                Select Pathway <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- PATHWAY B: In-Clinic Visits -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-md hover:shadow-xl transition-all flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-outline"></div>
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-outline">Pathway B</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-error-container text-on-error-container">High Fatigue</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">In-Clinic Visits</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">क्लिनिक में सत्र</p>
+<div class="my-4 p-3 rounded-xl bg-surface-container-low">
+<div class="flex items-baseline gap-1">
+<span class="font-display-lg text-display-lg font-extrabold text-on-surface" id="cost-path-b">₹10,050</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">upfront</span>
+</div>
+<div class="font-label-sm text-label-sm text-outline mt-1 font-mono" id="breakdown-path-b">
+                  15 visits × ₹550 + ₹1,800 cab
+                </div>
+</div>
+<!-- Pathway Pros / Characteristics -->
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-error mt-0.5">hourglass_bottom</span>
+<span><strong>Hidden Strain:</strong> ~30 hours total commute + clinical waiting room fatigue.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary mt-0.5">fitness_center</span>
+<span>Full clinic gymnasium equipment access (parallel bars, leg press).</span>
+</li>
+</ul>
+</div>
+<div class="mt-5 pt-3 border-t border-surface-container flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-error font-semibold">Risk: Traumatic Bumps</span>
+<button class="font-label-md text-label-md text-primary font-bold hover:underline inline-flex items-center gap-1" onclick="selectPathway('B')">
+                Select Pathway <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- PATHWAY C: Hybrid Care + Device Rental (RECOMMENDED) -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-xl ring-2 ring-primary relative overflow-hidden flex flex-col justify-between">
+<!-- Recommended Ribbon -->
+<div class="absolute top-0 right-0 bg-primary text-on-primary font-label-sm text-label-sm font-bold px-3 py-1 rounded-bl-xl shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">star</span>
+              BEST VALUE &amp; CLINICAL OUTCOME
+            </div>
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-primary">Pathway C</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Hybrid Care + Device Rental</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">हाइब्रिड देखभाल + उपकरण किराया</p>
+<div class="my-4 p-3 rounded-xl bg-surface-container-high">
+<div class="flex items-baseline gap-1">
+<span class="font-display-lg text-display-lg font-extrabold text-primary" id="cost-path-c">₹7,200</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Lowest total outlay</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface mt-1 font-mono font-semibold" id="breakdown-path-c">
+                  8 In-clinic guidance + 4-wk CPM machine
+                </div>
+</div>
+<!-- Pathway Pros / Characteristics -->
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary mt-0.5">check_circle</span>
+<span><strong>3x Daily Therapy:</strong> Continuous passive mobilization machine at home accelerates knee flexion from Day 3.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary mt-0.5">trending_down</span>
+<span><strong>Saves ₹4,800:</strong> Avoids hiring physiotherapist for routine machine cycles.</span>
+</li>
+</ul>
+</div>
+<div class="mt-5 pt-3 border-t border-surface-container flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Recommended by 92% Physios</span>
+<button class="px-3.5 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold shadow-sm hover:bg-primary-container transition-colors" onclick="selectPathway('C')">
+                Apply Pathway C
+              </button>
+</div>
+</div>
+<!-- PATHWAY D: Buy Unit + Tele-Consult Reviews -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-md hover:shadow-xl transition-all flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-surface-container-highest"></div>
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-secondary">Pathway D</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-surface-container text-on-surface-variant">Asset Ownership</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Buy Unit + Tele-Consult Reviews</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">मशीन खरीदें + वीडियो परामर्श</p>
+<div class="my-4 p-3 rounded-xl bg-surface-container-low">
+<div class="flex items-baseline gap-1">
+<span class="font-display-lg text-display-lg font-extrabold text-on-surface" id="cost-path-d">₹21,000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">initial outlay</span>
+</div>
+<div class="font-label-sm text-label-sm text-secondary mt-1 font-mono" id="breakdown-path-d">
+                  ₹18,000 unit buy + ₹3,000 tele-visits
+                </div>
+</div>
+<!-- Pathway Pros / Characteristics -->
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary mt-0.5">currency_exchange</span>
+<span><strong>Resale Liquidity:</strong> Recover ~₹8,000 via Physio Sathi verified secondary buy-back pool.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary mt-0.5">repeat</span>
+<span>Best for chronic multi-year conditions or bilateral knee replacements scheduled months apart.</span>
+</li>
+</ul>
+</div>
+<div class="mt-5 pt-3 border-t border-surface-container flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Net post-resale: ₹13,000</span>
+<button class="font-label-md text-label-md text-primary font-bold hover:underline inline-flex items-center gap-1" onclick="selectPathway('D')">
+                Select Pathway <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Inline Visual Comparison Sparkline & Outlay Bar Chart -->
+<div class="p-5 rounded-2xl bg-surface-container-low shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-md text-label-md font-bold text-on-surface">Relative Outlay vs Clinical Stress Comparison</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lower length = Cost-efficiency</span>
+</div>
+<!-- Dynamic SVG Stacked Bar Chart -->
+<div class="w-full bg-surface-container-lowest p-4 rounded-xl space-y-3">
+<!-- Row A -->
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold w-24">Home Visits</span>
+<div class="flex-1 bg-surface-container h-4 rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full rounded-full transition-all duration-500" id="bar-a" style="width: 57%;"></div>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface w-16 text-right" id="bar-a-label">₹12,000</span>
+</div>
+<!-- Row B -->
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold w-24">In-Clinic</span>
+<div class="flex-1 bg-surface-container h-4 rounded-full overflow-hidden flex">
+<div class="bg-outline h-full rounded-full transition-all duration-500" id="bar-b" style="width: 48%;"></div>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface w-16 text-right" id="bar-b-label">₹10,050</span>
+</div>
+<!-- Row C -->
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-primary font-bold w-24">Hybrid Model</span>
+<div class="flex-1 bg-surface-container h-4 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full rounded-full transition-all duration-500" id="bar-c" style="width: 34%;"></div>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary w-16 text-right" id="bar-c-label">₹7,200</span>
+</div>
+<!-- Row D -->
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold w-24">Buy Equipment</span>
+<div class="flex-1 bg-surface-container h-4 rounded-full overflow-hidden flex">
+<div class="bg-surface-container-highest h-full rounded-full transition-all duration-500" id="bar-d" style="width: 100%;"></div>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface w-16 text-right" id="bar-d-label">₹21,000</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- ===================== MANDATORY CLINICAL CARE NOTICE ===================== -->
+<section class="w-full max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg mt-6">
+<div class="p-5 md:p-6 rounded-2xl bg-error-container text-on-error-container shadow-sm flex flex-col md:flex-row items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-error text-on-error flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[28px]">warning</span>
+</div>
+<div class="flex flex-col gap-1.5 flex-1">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight">Clinical Care Notice / नैदानिक सावधानी निर्देश</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-error text-on-error uppercase font-bold">Mandatory Protocol</span>
+</div>
+<p class="font-body-md text-body-md text-on-error-container leading-relaxed">
+          The cheapest price is not always clinically ideal. A medically supervised early rehabilitation cycle drastically lowers the risk of chronic joint stiffness, adhesion formation, or reinjury. Please review these financial estimates with your treating orthopedic surgeon or chief physiotherapist before altering prescribed visit frequencies.
+        </p>
+<div class="flex flex-wrap items-center gap-4 mt-2 font-label-sm text-label-sm font-semibold opacity-90">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">verified_user</span> Indian Association of Physiotherapists (IAP) Ethics Code Compliant</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">call</span> Free Second Opinion Review: 1800-890-7497</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ===================== BOTTOM ACTION ROW ===================== -->
+<footer class="w-full max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg my-8">
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-md flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<!-- Care Team Summary & Local Budget Callout -->
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-2xl bg-primary-container text-on-primary-container flex items-center justify-center font-bold shadow-sm">
+<span class="material-symbols-outlined text-[30px]">local_hospital</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Estimated Outlay Window</div>
+<div class="font-headline-md text-headline-md font-extrabold text-on-surface">
+            ₹7,200 – ₹12,000 <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">(6-Week Post-Op Protocol)</span>
+</div>
+<div class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">pin_drop</span>
+            34 Certified PTs &amp; Equipment Depots available in Indiranagar &amp; 8km radius
+          </div>
+</div>
+</div>
+<!-- Action Button Group -->
+<div class="flex flex-wrap items-center gap-3 w-full lg:w-auto justify-end">
+<!-- WhatsApp Direct Share -->
+<button class="flex-1 sm:flex-none px-4 py-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-tertiary font-label-md text-label-md font-bold transition-colors flex items-center justify-center gap-2 shadow-sm" onclick="shareViaWhatsApp()">
+<span class="material-symbols-outlined text-[20px] text-tertiary">chat</span>
+          Share Estimate via WhatsApp
+        </button>
+<!-- Download PDF -->
+<button class="flex-1 sm:flex-none px-4 py-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-bold transition-colors flex items-center justify-center gap-2 shadow-sm" onclick="downloadCostPDF()">
+<span class="material-symbols-outlined text-[20px]">download</span>
+          Download PDF Summary
+        </button>
+<!-- Primary Match CTA -->
+<button class="w-full sm:w-auto px-6 py-3 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold transition-all shadow-md flex items-center justify-center gap-2" onclick="findPhysiosInBudget()">
+<span class="material-symbols-outlined text-[20px]">person_search</span>
+          Find Certified Physios Within This Budget
+        </button>
+</div>
+</div>
+</footer>
+<!-- Toast Notification Modal for Micro-Interactions -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none p-4 rounded-xl bg-inverse-surface text-inverse-on-surface shadow-2xl flex items-center gap-3 max-w-md" id="toast-notification">
+<span class="material-symbols-outlined text-tertiary-fixed text-[24px]" id="toast-icon">check_circle</span>
+<div>
+<div class="font-label-md text-label-md font-bold" id="toast-title">Calculation Updated</div>
+<div class="font-body-sm text-body-sm text-surface-variant" id="toast-desc">Estimated breakdown synced with Bengaluru clinical norms.</div>
+</div>
+</div>
+</div>
+<!-- Vanilla Calculation Logic & State Handling Script -->
+<script>
+  let state = {
+    sessions: 15,
+    homeFee: 800,
+    commuteCost: 120,
+    rentalWeeks: 4,
+    rentPerWeek: 700,
+    unitBuyPrice: 18000,
+    preset: 'tkr',
+    currentState: 'active'
+  };
+
+  function updateCalculations() {
+    if (state.currentState === 'loading') return;
+
+    // Grab values from sliders if called via input
+    const sliderFee = document.getElementById('slider-home-fee');
+    const sliderCommute = document.getElementById('slider-commute-cost');
+    if (sliderFee) state.homeFee = parseInt(sliderFee.value, 10);
+    if (sliderCommute) state.commuteCost = parseInt(sliderCommute.value, 10);
+
+    // Update displays
+    document.getElementById('session-count-display').innerText = state.sessions;
+    document.getElementById('home-fee-display').innerHTML = `₹${state.homeFee.toLocaleString('en-IN')} <span class="font-label-sm text-label-sm font-normal text-on-surface-variant">/ session</span>`;
+    document.getElementById('commute-cost-display').innerHTML = `₹${state.commuteCost.toLocaleString('en-IN')} <span class="font-label-sm text-label-sm font-normal text-on-surface-variant">roundtrip</span>`;
+    
+    const rentalTotal = state.rentalWeeks * state.rentPerWeek;
+    document.getElementById('rental-subtotal-display').innerText = `₹${rentalTotal.toLocaleString('en-IN')} total`;
+
+    // Pathway Calculations:
+    // Pathway A: Sessions * HomeFee
+    const totalA = state.sessions * state.homeFee;
+    document.getElementById('cost-path-a').innerText = `₹${totalA.toLocaleString('en-IN')}`;
+    document.getElementById('breakdown-path-a').innerText = `${state.sessions} visits × ₹${state.homeFee} + ₹0 transport`;
+
+    // Pathway B: Sessions * (HomeFee * 0.70 approx clinic fee) + (Sessions * commuteCost)
+    const clinicFeePerVisit = Math.round(state.homeFee * 0.70);
+    const totalTransit = state.sessions * state.commuteCost;
+    const totalB = (state.sessions * clinicFeePerVisit) + totalTransit;
+    document.getElementById('cost-path-b').innerText = `₹${totalB.toLocaleString('en-IN')}`;
+    document.getElementById('breakdown-path-b').innerText = `${state.sessions} visits × ₹${clinicFeePerVisit} + ₹${totalTransit.toLocaleString('en-IN')} transit`;
+
+    // Pathway C (Hybrid): ~Half sessions guidance (8) in-clinic + Rental Equipment
+    const hybridVisits = Math.max(4, Math.round(state.sessions * 0.55));
+    const hybridClinicCost = hybridVisits * (clinicFeePerVisit + state.commuteCost);
+    const totalC = hybridClinicCost + rentalTotal;
+    document.getElementById('cost-path-c').innerText = `₹${totalC.toLocaleString('en-IN')}`;
+    document.getElementById('breakdown-path-c').innerText = `${hybridVisits} In-clinic guidance + ${state.rentalWeeks}-wk machine rental`;
+
+    // Pathway D: Unit Outlay + 6 Tele-reviews (~₹500 each)
+    const teleVisitsCost = 3000;
+    const totalD = state.unitBuyPrice + teleVisitsCost;
+    document.getElementById('cost-path-d').innerText = `₹${totalD.toLocaleString('en-IN')}`;
+    document.getElementById('breakdown-path-d').innerText = `₹${state.unitBuyPrice.toLocaleString('en-IN')} unit buy + ₹3,000 tele-reviews`;
+
+    // Update Sparkline Bar Lengths
+    const maxReference = 25000;
+    const pctA = Math.min(100, Math.round((totalA / maxReference) * 100));
+    const pctB = Math.min(100, Math.round((totalB / maxReference) * 100));
+    const pctC = Math.min(100, Math.round((totalC / maxReference) * 100));
+    const pctD = Math.min(100, Math.round((totalD / maxReference) * 100));
+
+    document.getElementById('bar-a').style.width = pctA + '%';
+    document.getElementById('bar-b').style.width = pctB + '%';
+    document.getElementById('bar-c').style.width = pctC + '%';
+    document.getElementById('bar-d').style.width = pctD + '%';
+
+    document.getElementById('bar-a-label').innerText = `₹${totalA.toLocaleString('en-IN')}`;
+    document.getElementById('bar-b-label').innerText = `₹${totalB.toLocaleString('en-IN')}`;
+    document.getElementById('bar-c-label').innerText = `₹${totalC.toLocaleString('en-IN')}`;
+    document.getElementById('bar-d-label').innerText = `₹${totalD.toLocaleString('en-IN')}`;
+  }
+
+  function adjustSessions(delta) {
+    state.sessions = Math.max(4, Math.min(48, state.sessions + delta));
+    updateCalculations();
+  }
+
+  function setRentalWeeks(weeks) {
+    state.rentalWeeks = weeks;
+    [2, 4, 6, 8].forEach(w => {
+      const el = document.getElementById(`rent-week-${w}`);
+      if (el) {
+        if (w === weeks) {
+          el.className = 'rental-pill py-2 text-center rounded-lg font-label-md text-label-md bg-primary text-on-primary font-bold shadow-sm transition-colors';
+        } else {
+          el.className = 'rental-pill py-2 text-center rounded-lg font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors';
+        }
+      }
+    });
+    updateCalculations();
+  }
+
+  function setPreset(type) {
+    state.preset = type;
+    const presets = ['tkr', 'neuro', 'back'];
+    presets.forEach(p => {
+      const btn = document.getElementById(`preset-${p}`);
+      if (!btn) return;
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (p === type) {
+        btn.className = 'preset-btn px-4 py-2.5 rounded-xl font-label-md text-label-md text-left transition-all bg-primary text-on-primary shadow-sm flex items-center justify-between gap-2';
+        if (icon) icon.className = 'material-symbols-outlined text-[18px] text-on-primary';
+      } else {
+        btn.className = 'preset-btn px-4 py-2.5 rounded-xl font-label-md text-label-md text-left transition-all bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-between gap-2';
+        if (icon) icon.className = 'material-symbols-outlined text-[18px] text-transparent';
+      }
+    });
+
+    if (type === 'tkr') {
+      state.sessions = 15;
+      state.homeFee = 800;
+      state.commuteCost = 120;
+      state.rentalWeeks = 4;
+      document.getElementById('session-cycle-label').innerText = '6-Week Plan';
+    } else if (type === 'neuro') {
+      state.sessions = 36;
+      state.homeFee = 1100;
+      state.commuteCost = 180;
+      state.rentalWeeks = 8;
+      document.getElementById('session-cycle-label').innerText = '12-Week Neuro Protocol';
+    } else if (type === 'back') {
+      state.sessions = 10;
+      state.homeFee = 700;
+      state.commuteCost = 100;
+      state.rentalWeeks = 2;
+      document.getElementById('session-cycle-label').innerText = '4-Week Core Protocol';
+    }
+
+    document.getElementById('slider-home-fee').value = state.homeFee;
+    document.getElementById('slider-commute-cost').value = state.commuteCost;
+    setRentalWeeks(state.rentalWeeks);
+    showToast('Preset Calibrated', `Configured clinical values for ${type.toUpperCase()} recovery cycle.`);
+  }
+
+  function resetSliders() {
+    setPreset('tkr');
+  }
+
+  function switchPlannerState(target) {
+    state.currentState = target;
+    const activeBtn = document.getElementById('btn-state-active');
+    const missingBtn = document.getElementById('btn-state-missing');
+    const loadingBtn = document.getElementById('btn-state-loading');
+    const missingAlert = document.getElementById('missing-alert-container');
+    const calcView = document.getElementById('calculator-view');
+    const loadView = document.getElementById('loading-view');
+
+    // Reset pill styles
+    [activeBtn, missingBtn, loadingBtn].forEach(b => {
+      b.className = 'font-label-sm text-label-sm px-3 py-1 rounded-full text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1';
+    });
+
+    if (target === 'active') {
+      activeBtn.className = 'font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container-lowest text-primary font-bold shadow-sm transition-all flex items-center gap-1';
+      missingAlert.classList.add('hidden');
+      loadView.classList.add('hidden');
+      calcView.classList.remove('hidden');
+      updateCalculations();
+    } else if (target === 'missing') {
+      missingBtn.className = 'font-label-sm text-label-sm px-3 py-1 rounded-full bg-error-container text-on-error-container font-bold shadow-sm transition-all flex items-center gap-1';
+      missingAlert.classList.remove('hidden');
+      loadView.classList.add('hidden');
+      calcView.classList.remove('hidden');
+      showToast('Missing Parameters', 'Transit distance requires confirmation for accurate estimates.', 'error');
+    } else if (target === 'loading') {
+      loadingBtn.className = 'font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-bold shadow-sm transition-all flex items-center gap-1';
+      missingAlert.classList.add('hidden');
+      calcView.classList.add('hidden');
+      loadView.classList.remove('hidden');
+      loadView.classList.add('flex');
+    }
+  }
+
+  function resolveMissingAlert() {
+    document.getElementById('slider-commute-cost').value = 140;
+    state.commuteCost = 140;
+    switchPlannerState('active');
+    showToast('Calibrated Default 4.5 km', 'Bengaluru auto fare applied at ₹140 roundtrip.');
+  }
+
+  function selectPathway(pathwayLetter) {
+    showToast(`Pathway ${pathwayLetter} Selected`, `We have tailored your clinician search to match Pathway ${pathwayLetter}.`);
+  }
+
+  function shareViaWhatsApp() {
+    showToast('Opening WhatsApp Link', 'Generated customized recovery breakdown summary with verified clinic quotes.');
+  }
+
+  function downloadCostPDF() {
+    showToast('Generating PDF Report', 'Your NABH-compliant expense breakdown has been saved.');
+  }
+
+  function findPhysiosInBudget() {
+    showToast('Matching 34 Therapists', 'Filtering certified practitioners within ₹7,200 - ₹12,000 threshold.');
+  }
+
+  function showToast(title, desc, type = 'success') {
+    const toast = document.getElementById('toast-notification');
+    const toastTitle = document.getElementById('toast-title');
+    const toastDesc = document.getElementById('toast-desc');
+    const toastIcon = document.getElementById('toast-icon');
+
+    toastTitle.innerText = title;
+    toastDesc.innerText = desc;
+
+    if (type === 'error') {
+      toastIcon.innerText = 'report_problem';
+      toastIcon.className = 'material-symbols-outlined text-error text-[24px]';
+    } else {
+      toastIcon.innerText = 'check_circle';
+      toastIcon.className = 'material-symbols-outlined text-tertiary-fixed text-[24px]';
+    }
+
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3500);
+  }
+
+  // Initialize calculations on DOM ready
+  document.addEventListener('DOMContentLoaded', () => {
+    updateCalculations();
+  });
+</script></main><footer class="w-full bg-surface-container-low mt-margin-lg"><div class="max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg py-margin-md flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-col items-center md:items-start"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface">Physio Sathi</span><span class="font-label-sm text-label-sm text-on-surface-variant">(फ़िज़ियो साथी)</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-center md:text-left">Empowering Indian families with transparent, verified physical rehabilitation and home care.</p></div><div class="flex items-center gap-space-md font-label-md text-label-md text-on-surface-variant"><a class="hover:text-on-surface transition-colors" data-path="find-physio" href="#">Physiotherapists</a><a class="hover:text-on-surface transition-colors" data-path="equipment-hub" href="#">Rehab Rentals</a><a class="hover:text-on-surface transition-colors" data-path="cost-planner" href="#">Price Transparency</a><a class="hover:text-on-surface transition-colors" data-path="emergency-support" href="#">Support Helpline</a></div><div class="font-label-sm text-label-sm text-on-surface-variant text-center md:text-right">© 2025 Physio Sathi Healthcare Ltd. Built for empathetic recovery.</div></div></footer></body></html>

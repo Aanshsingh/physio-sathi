@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-container":"#bfd5fe","outline-variant":"#bcc9cb","on-tertiary-container":"#f4fffb","on-background":"#0b1c30","tertiary-fixed":"#8cf5e4","primary-container":"#00818c","error-container":"#ffdad6","on-primary-fixed-variant":"#004f56","on-secondary-container":"#465c7f","on-surface":"#0b1c30","primary-fixed-dim":"#67d6e4","background":"#f8f9ff","inverse-primary":"#67d6e4","on-primary-fixed":"#001f23","on-error":"#ffffff","secondary-fixed-dim":"#b1c7f0","on-secondary-fixed-variant":"#314769","surface-container-high":"#dce9ff","secondary-fixed":"#d5e3ff","surface":"#f8f9ff","tertiary":"#00685d","on-secondary-fixed":"#001c3b","surface-tint":"#006972","on-secondary":"#ffffff","inverse-on-surface":"#eaf1ff","on-error-container":"#93000a","error":"#ba1a1a","surface-container-lowest":"#ffffff","inverse-surface":"#213145","secondary":"#495f82","on-tertiary-fixed-variant":"#005048","on-surface-variant":"#3d494a","tertiary-fixed-dim":"#6fd8c8","surface-dim":"#cbdbf5","surface-container":"#e5eeff","on-tertiary":"#ffffff","primary-fixed":"#8df2ff","on-primary-container":"#f6feff","on-primary":"#ffffff","on-tertiary-fixed":"#00201c","surface-variant":"#d3e4fe","primary":"#00666f","surface-container-low":"#eff4ff","surface-container-highest":"#d3e4fe","surface-bright":"#f8f9ff","outline":"#6d797b","tertiary-container":"#008376"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"margin-md":"2rem","space-md":"1rem","gutter-lg":"2rem","space-sm":"0.5rem","space-xl":"2.5rem","gutter-md":"1.5rem","space-xs":"0.25rem",gutter:"1rem","space-lg":"1.5rem",margin:"1rem","margin-lg":"3rem"},fontFamily:{"display-lg":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"]},fontSize:{"display-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-lg":["15px",{lineHeight:"20px",fontWeight:"600"}],"headline-md":["22px",{lineHeight:"30px",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"16px",letterSpacing:"0.03em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"26px",fontWeight:"600"}],"display-lg-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"22px",fontWeight:"400"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"600"}],"body-sm":["14px",{lineHeight:"20px",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,37,69,0.06)]"><div class="h-20 max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg flex-shrink-0"><div class="flex items-center gap-space-sm cursor-pointer"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">healing</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-tight">Physio Sathi</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">फ़िज़ियो साथी • Rehab &amp; Care Companion</span></div></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-surface-container text-on-surface cursor-pointer hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-primary text-[18px]">location_on</span><span class="font-label-md text-label-md font-semibold text-on-surface">Indiranagar, Bengaluru</span><span class="material-symbols-outlined text-outline text-[16px]">expand_more</span></div></div><nav class="hidden lg:flex items-center gap-space-md" data-active-classes="bg-primary-container text-on-primary-container font-label-md text-label-md px-3 py-1.5 rounded-lg"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="home" href="#">Home</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="find-physio" href="#">Find Physio</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="equipment-hub" href="#">Equipment Hub</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="cost-planner" href="#">Cost Planner</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="ai-assistant" href="#">AI Assistant</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="clinician-demo-view" href="#">Clinician Demo View</a></nav><div class="flex items-center gap-space-md flex-shrink-0"><div class="hidden sm:flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-low text-tertiary cursor-pointer hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[16px] text-tertiary">call</span><div class="flex flex-col text-left"><span class="font-label-sm text-label-sm leading-none text-tertiary">Toll-Free Helpline</span><span class="font-label-md text-label-md font-bold leading-tight text-on-surface">1800-890-7497</span></div></div><button aria-label="Notifications" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center cursor-pointer shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-160px)]"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg py-space-md">
+<!-- Breadcrumb with Hindi Context Marker -->
+<nav aria-label="Breadcrumb" class="flex items-center flex-wrap gap-space-xs text-on-surface-variant font-label-md text-label-md mb-space-lg">
+<a class="hover:text-primary transition-colors flex items-center gap-1" data-path="home" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+<span>Home</span>
+</a>
+<span class="text-outline-variant font-bold">/</span>
+<a class="hover:text-primary transition-colors" data-path="find-physio" href="#">Bengaluru (बेंगलुरु)</a>
+<span class="text-outline-variant font-bold">/</span>
+<span class="hover:text-on-surface transition-colors cursor-pointer">Indiranagar</span>
+<span class="text-outline-variant font-bold">/</span>
+<span class="text-on-surface font-bold truncate">Dr. Ananya Rao, MPT (Ortho)</span>
+<span class="ml-2 inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px] mr-1" style="font-variation-settings: 'FILL' 1;">verified</span>
+        Verified Council Dossier
+      </span>
+</nav>
+<!-- Main Asymmetric Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Column: Clinician Dossier (7 Cols / ~680-720px) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Header Hero Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-48 h-48 rounded-full bg-primary-fixed/30 pointer-events-none blur-2xl"></div>
+<div class="flex flex-col sm:flex-row gap-space-lg items-start relative z-10">
+<!-- Doctor Portrait -->
+<div class="relative flex-shrink-0">
+<div class="w-32 h-32 rounded-xl overflow-hidden shadow-md bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Empathetic Indian female physiotherapist in clinical scrub suit smiling warmly in a bright, modern rehabilitation studio with therapeutic treatment bed and natural sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMird7HEiu3jWUs2lODivehCrooM1dPnIJGqx_WB-kAcQnobl_iV9psRRnFt_b4UMHfj3EZAmvd9jFxr-YhMwCRoS_Z_MqXJCn5LbgxduFDxesbbo6zKsE6vy1e1Svhsh4OmkrTd08M9GI05SqxqH8tl04pmGDyhIVYRtML0uD1j1bq92BfxQOfCAmHeaz7NL0X6PHoHXS9aA3y9xX3_8Q9t-8vS-I8NCXfhlCp7UQVQqzJwcjT-_w"/>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-tertiary text-on-tertiary px-2 py-0.5 rounded-full font-label-sm text-label-sm flex items-center gap-0.5 shadow-sm">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+<span>Active Lic.</span>
+</div>
+</div>
+<!-- Clinician Basic Credentials -->
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center justify-between gap-space-xs mb-1">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Dr. Ananya Rao</h1>
+<div class="flex items-center gap-1 bg-surface-container px-2.5 py-1 rounded-full text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md font-bold">4.9</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">(124 verified reviews)</span>
+</div>
+</div>
+<p class="font-label-lg text-label-lg text-primary font-semibold mb-1">
+                MPT Orthopaedics &amp; Joint Rehabilitation
+              </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+                Ex-Senior Joint Rehab Specialist, <span class="font-semibold text-on-surface">Manipal Hospital Orthopedic Wing</span> (HAL Airport Rd)
+              </p>
+<!-- Registration Seal Pill Box -->
+<div class="flex flex-wrap gap-2 pt-1">
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[15px]">badge</span>
+<span>KAPC Reg: <strong class="text-on-surface">KAPC-48291</strong></span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-tertiary text-[15px]">verified_user</span>
+<span>Member: <strong class="text-on-surface">MIAP #L-32918</strong></span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[15px]">timer</span>
+<span>9+ Years Experience</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Recovery Progress Milestone Guarantee Banner -->
+<div class="mt-space-lg pt-space-md bg-surface-container-low rounded-lg p-space-md flex items-center justify-between gap-space-md flex-wrap">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+</div>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Standard Protocol Assured (प्रोटोकॉल प्रमाणित)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Functional mobility score benchmarked at Session 1 and Session 6.</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-semibold">
+                Bilingual: Kannada, Hindi, English
+              </span>
+</div>
+</div>
+</div>
+<!-- Transparent Pricing Grid Matrix -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Transparent Consultation Tariffs</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Zero hidden platform surcharge • Exact clinical standard billing</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">price_check</span>
+              Price Protected
+            </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Home Visit Card -->
+<div class="p-space-md rounded-xl bg-surface-container-low relative flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-1">
+<span class="font-label-md text-label-md font-bold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">home_health</span>
+                    Home Rehabilitation Visit
+                  </span>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-primary text-on-primary">POPULAR</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Clinician travels with modalities to patient bed/residence</p>
+<div class="flex items-baseline gap-1 mb-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">₹850</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 45–60 min session</span>
+</div>
+<ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+<li class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+                    Portable TENS &amp; Ultrasound included
+                  </li>
+<li class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+                    Zero travel fee within 4.5 km radius
+                  </li>
+<li class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+                    Caregiver home exercise training chart
+                  </li>
+</ul>
+</div>
+<div class="text-[12px] font-label-sm text-tertiary bg-surface-container px-2 py-1 rounded text-center">
+                Pay ₹0 now • Pay ₹850 via UPI/Cash post session
+              </div>
+</div>
+<!-- Clinic Visit Card -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-1">
+<span class="font-label-md text-label-md font-bold text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">local_hospital</span>
+                    OrthoCare Clinic Walk-In
+                  </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">#482, 100ft Road, Opp. Costa Coffee, Indiranagar</p>
+<div class="flex items-baseline gap-1 mb-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">₹600</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 45 min session</span>
+</div>
+<ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+                    Full Parallel Bars &amp; Traction access
+                  </li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+                    Advanced Cryotherapy station
+                  </li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+                    Wheelchair accessible ramp &amp; lift
+                  </li>
+</ul>
+</div>
+<div class="text-[12px] font-label-sm text-on-surface-variant bg-surface-container-low px-2 py-1 rounded text-center">
+                Clinic Hours: Mon–Sat 9:30 AM – 1:30 PM
+              </div>
+</div>
+</div>
+</div>
+<!-- Clinical Focus & Portable Equipment Kit -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-1">Clinical Focus &amp; Carried Equipment</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Specialized orthopedic rehab equipment Dr. Ananya brings directly for home care</p>
+<!-- Core Specializations -->
+<div class="mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline mb-2 block">Specialty Conditions</span>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-lg bg-surface-container font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">accessibility_new</span>
+                Post-TKR (Total Knee Replacement)
+              </span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">healing</span>
+                Total Hip Arthroplasty (THA)
+              </span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">airline_seat_recline_normal</span>
+                Lumbar Sciatica &amp; Disc Herniation
+              </span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">directions_walk</span>
+                Geriatric Balance &amp; Fall Prevention
+              </span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">sports_handball</span>
+                Frozen Shoulder (Adhesive Capsulitis)
+              </span>
+</div>
+</div>
+<!-- Modalities List -->
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline mb-2 block">Clinician Modality Kit Carried on Visits</span>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm text-center">
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[28px] mb-1">waves</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Dual-Freq Ultrasound</span>
+<span class="text-[11px] text-on-surface-variant">1MHz / 3MHz Deep Heat</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[28px] mb-1">electric_bolt</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">2-Channel TENS / IFT</span>
+<span class="text-[11px] text-on-surface-variant">Post-Op Pain Control</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[28px] mb-1">square_foot</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Digital Goniometer</span>
+<span class="text-[11px] text-on-surface-variant">Precise ROM Tracking</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[28px] mb-1">fitness_center</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">TheraBand Set</span>
+<span class="text-[11px] text-on-surface-variant">Resistance Loops</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Operating Radius & Service Geography (Map Integrated) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Home Visit Service Radius (सेवा क्षेत्र)</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">4.5 km door-to-door radius from Indiranagar Metro Station</p>
+</div>
+<span class="px-2 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+              Fast Arrival (&lt; 35 mins)
+            </span>
+</div>
+<!-- Static Map with Overlaid Service Boundaries -->
+<div class="relative w-full h-56 rounded-xl overflow-hidden shadow-inner bg-surface-container">
+<div class="w-full h-full bg-cover bg-center" data-location="Indiranagar, Bengaluru, Karnataka, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDh-6qJuO5K7hybbqO5BzhNm7DDtKijFczpIHQnQqImuefZANwAQIqhpkgqL7p15Q_4Hsw7qC6DvJZfg7s3huJVV3tbkyW4FG3TMTWpKOdrM5C4JdwQZ2a3nF6RoiLyswKQq5m77_a-sEv9uqUDeR3vLRUMh9m8XjVBSFDmzW89qTFF8ADYC3mgUAWBTTOjJ3RAUJRYkf-mSNJZvB9Qv5b82eagFf9r6zflQC_SB_ueSzZPjGHqBMnb')"></div>
+<!-- Floating Service Badge Overlay -->
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest/95 backdrop-blur-md px-3 py-2 rounded-lg shadow-md flex items-center gap-3">
+<div class="w-3 h-3 rounded-full bg-primary animate-ping"></div>
+<div class="text-left">
+<p class="font-label-sm text-label-sm font-bold text-on-surface">Active Coverage Localities</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Indiranagar, Domlur, HAL 2nd Stage, Ulsoor, Kodihalli</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Verified Patient Recovery Reviews -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Verified Patient Milestones</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Documented recovery outcomes from local Bengaluru families</p>
+</div>
+<div class="flex items-center gap-1 text-primary font-label-md text-label-md font-semibold cursor-pointer hover:underline">
+<span>View all 124 reviews</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Review 1 -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-md">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-label-lg">
+                  SV
+                </div>
+<div>
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface">Suresh Venkatesh</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Caregiver for 72yo Mother • Indiranagar 12th Main</p>
+</div>
+</div>
+<div class="flex items-center text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed text-[12px] font-bold mb-2">
+<span class="material-symbols-outlined text-[14px]">flag</span>
+              Milestone: Mother walked without walker in 3 weeks post-TKR
+            </div>
+<p class="font-body-md text-body-md text-on-surface">
+              "Dr. Ananya is extraordinarily patient. My mother was extremely anxious after bilateral knee surgery. Dr. Ananya arrived exactly on time, checked vitals first, and used gentle mobilization techniques that gave my mother immense confidence. Worth every rupee."
+            </p>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-low rounded-xl p-space-md">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-label-lg">
+                  NM
+                </div>
+<div>
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface">Nandita Menon</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Patient • L4-L5 Lumbar Disc Rehab • Domlur Layout</p>
+</div>
+</div>
+<div class="flex items-center text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed text-[12px] font-bold mb-2">
+<span class="material-symbols-outlined text-[14px]">flag</span>
+              Milestone: Returned to full desk work pain-free in 14 days
+            </div>
+<p class="font-body-md text-body-md text-on-surface">
+              "The TENS and core stability routine designed by Dr. Ananya resolved the radiating numbness in my left calf. Transparent communication and no unnecessary extra sessions pushed on us."
+            </p>
+</div>
+</div>
+</div>
+<!-- Right Column: Sticky Direct Clinician Enquiry Box (5 Cols / ~460-500px) -->
+<div class="lg:col-span-5 lg:sticky lg:top-24">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-xl relative overflow-hidden">
+<!-- Top Indicator Accent -->
+<div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-primary via-tertiary to-primary-container"></div>
+<!-- Header of Booking Form -->
+<div class="mb-space-md pt-1">
+<div class="flex items-center justify-between gap-2 mb-1">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Direct Clinician Enquiry</h2>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary font-label-sm text-label-sm font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">lock_reset</span>
+                ₹0 Upfront Fee
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary inline-block"></span>
+<span>Dr. Ananya usually responds within <strong>30–45 mins</strong></span>
+</p>
+</div>
+<!-- Quick Pay Transparency Highlight -->
+<div class="bg-surface-container-low rounded-lg p-2.5 mb-space-md flex items-center justify-between text-on-surface font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Session payment terms:</span>
+<span class="font-bold text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+              Pay only after session ends
+            </span>
+</div>
+<!-- Interactive Enquiry Form -->
+<form class="space-y-space-md" id="enquiryForm" onsubmit="event.preventDefault(); handleEnquirySubmission();">
+<!-- Consultation Mode Selector Segmented Tabs -->
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1.5">
+                Consultation Type (परामर्श का प्रकार)
+              </label>
+<div class="grid grid-cols-2 gap-2 p-1 bg-surface-container-low rounded-xl">
+<label class="flex flex-col items-center justify-center py-2.5 px-3 rounded-lg cursor-pointer bg-surface-container-lowest text-primary shadow-sm transition-all text-center" id="mode-home-label">
+<input checked="" class="sr-only" name="consultation_mode" onchange="toggleConsultationMode('home')" type="radio" value="home"/>
+<span class="font-label-md text-label-md font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">home</span>
+                    Home Visit
+                  </span>
+<span class="text-[12px] font-semibold text-tertiary mt-0.5">₹850 / session</span>
+</label>
+<label class="flex flex-col items-center justify-center py-2.5 px-3 rounded-lg cursor-pointer text-on-surface-variant transition-all text-center hover:text-on-surface" id="mode-clinic-label">
+<input class="sr-only" name="consultation_mode" onchange="toggleConsultationMode('clinic')" type="radio" value="clinic"/>
+<span class="font-label-md text-label-md font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">store</span>
+                    Clinic Visit
+                  </span>
+<span class="text-[12px] font-semibold text-on-surface-variant mt-0.5">₹600 at 100ft Rd</span>
+</label>
+</div>
+</div>
+<!-- Patient / Caregiver Full Name -->
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1" for="fullName">
+                Patient or Caregiver Full Name *
+              </label>
+<div class="relative">
+<input class="w-full h-12 px-3.5 bg-surface rounded-lg text-on-surface font-body-md text-body-md shadow-inner placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" id="fullName" placeholder="e.g. Ramesh Chandra (Son)" required="" type="text"/>
+</div>
+</div>
+<!-- Mobile Phone Input with India Country Prefix -->
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1" for="mobileNumber">
+                Mobile Number for Doctor Callback *
+              </label>
+<div class="flex">
+<span class="inline-flex items-center px-3.5 rounded-l-lg bg-surface-container text-on-surface font-label-md text-label-md font-bold">
+                  +91
+                </span>
+<input class="w-full h-12 px-3.5 bg-surface rounded-r-lg text-on-surface font-body-md text-body-md shadow-inner placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" id="mobileNumber" pattern="[0-9]{10}" placeholder="98765 43210" required="" type="tel"/>
+</div>
+</div>
+<!-- WhatsApp Update Consent Toggle -->
+<div class="flex items-start gap-2.5 pt-0.5">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary accent-primary cursor-pointer" id="whatsappConsent" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface-variant cursor-pointer" for="whatsappConsent">
+                Send appointment slot confirmation and therapist live ETA via <strong class="text-tertiary">WhatsApp</strong>
+</label>
+</div>
+<!-- Locality / Landmark Selector -->
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1" for="locality">
+                Patient Location / Landmark in Bengaluru *
+              </label>
+<div class="relative">
+<input class="w-full h-12 pl-10 pr-3.5 bg-surface rounded-lg text-on-surface font-body-md text-body-md shadow-inner placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" id="locality" placeholder="e.g. Near 12th Main Sony Signal, Indiranagar" required="" type="text" value="Indiranagar, 560038"/>
+<span class="material-symbols-outlined text-primary text-[20px] absolute left-3 top-3 pointer-events-none">location_on</span>
+</div>
+<span class="block text-[11px] font-label-sm text-tertiary mt-1" id="radiusNotice">
+                ✓ Within 4.5 km service zone • Zero therapist travel surcharge
+              </span>
+</div>
+<!-- Preferred Day and Time Slot Dropdowns -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1" for="preferredDay">
+                  Preferred Date
+                </label>
+<select class="w-full h-12 px-3 bg-surface rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer" id="preferredDay">
+<option value="today">Today (Emergency)</option>
+<option selected="" value="tomorrow">Tomorrow (Recommended)</option>
+<option value="day_after">Day after Tomorrow</option>
+<option value="weekend">This Weekend</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1" for="preferredTime">
+                  Time Slot
+                </label>
+<select class="w-full h-12 px-3 bg-surface rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer" id="preferredTime">
+<option value="morning">Morning (08:30 – 11:30 AM)</option>
+<option value="afternoon">Afternoon (12:00 – 03:00 PM)</option>
+<option selected="" value="evening">Evening (04:30 – 07:30 PM)</option>
+</select>
+</div>
+</div>
+<!-- Condition / Surgery Notes Textarea -->
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1" for="conditionNotes">
+                Condition or Surgery Details (मरीज की स्थिति)
+              </label>
+<textarea class="w-full p-3 bg-surface rounded-lg text-on-surface font-body-md text-body-md shadow-inner placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all resize-none" id="conditionNotes" placeholder="e.g. Left Total Knee Replacement 9 days ago, staples removed yesterday. Needs safe bedside gait &amp; bend exercises." rows="2"></textarea>
+</div>
+<!-- Optional Add-on Rental Equipment Checkbox (Cross-sell) -->
+<div class="p-3 rounded-lg bg-surface-container-low flex items-start gap-2.5">
+<input class="mt-1 w-4 h-4 rounded text-primary accent-primary cursor-pointer" id="cpmAddon" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface cursor-pointer select-none" for="cpmAddon">
+<span class="font-bold text-on-surface block">Add-on: Knee CPM (Continuous Passive Motion) Machine</span>
+<span class="text-on-surface-variant text-[12px] block">
+                  Delivered sanitized to your doorstep by tomorrow (+₹180/day rental, no deposit for verified patients)
+                </span>
+</label>
+</div>
+<!-- Form Total Summary Preview Box -->
+<div class="rounded-lg bg-surface-container p-space-sm flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Estimated Session Payable:</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface" id="payableSummary">₹850</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-tertiary font-bold block">₹0 Due Today</span>
+<span class="text-[11px] text-on-surface-variant">Direct settlement to clinician</span>
+</div>
+</div>
+<!-- Main CTA Button -->
+<button class="w-full h-13 py-3.5 px-4 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-headline-sm text-headline-sm tracking-wide shadow-md transition-all flex items-center justify-center gap-2" id="submitEnquiryBtn" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Send Direct Booking Enquiry (₹0)</span>
+</button>
+<!-- Prominent Safety & Regulatory Disclaimer -->
+<div class="pt-1 flex items-start gap-2 text-on-surface-variant font-label-sm text-label-sm leading-relaxed">
+<span class="material-symbols-outlined text-outline text-[16px] flex-shrink-0 mt-0.5">info</span>
+<span>
+<strong>Important Clinical Notice:</strong> This is an initial direct enquiry, not an instant confirmed slot. Dr. Ananya reviews orthopedic case severity before accepting to ensure home safety.
+              </span>
+</div>
+<!-- WhatsApp Direct Secondary Alternative -->
+<div class="text-center pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Prefer instant messaging?</span>
+<button class="inline-flex items-center gap-1.5 text-tertiary font-label-md text-label-md font-semibold hover:underline" onclick="handleWhatsAppDirect()" type="button">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Chat with Clinic Coordinator via WhatsApp</span>
+</button>
+</div>
+</form>
+<!-- Interactive Success State Drawer (Hidden by default) -->
+<div class="hidden absolute inset-0 bg-surface-container-lowest p-space-lg flex flex-col justify-center items-center text-center z-30" id="successCard">
+<div class="w-16 h-16 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mb-space-md shadow-md">
+<span class="material-symbols-outlined text-[36px]">check_circle</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Enquiry Sent to Dr. Ananya Rao!</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Your inquiry reference <strong class="text-on-surface font-semibold">#PS-8492</strong> has been forwarded. A doctor confirmation call will arrive on your mobile within 30 minutes.
+            </p>
+<div class="bg-surface-container-low p-space-sm rounded-lg w-full mb-space-md text-left font-body-sm text-body-sm">
+<div class="flex justify-between py-1">
+<span class="text-on-surface-variant">Consultation Type:</span>
+<span class="font-bold text-on-surface" id="confirmedMode">Home Visit</span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-on-surface-variant">Fee Due Post Session:</span>
+<span class="font-bold text-tertiary">₹850 (No Advance)</span>
+</div>
+</div>
+<button class="w-full py-2.5 px-4 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-bold transition-colors" onclick="resetEnquiryForm()" type="button">
+              Modify / Send Another Query
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Micro-interactions Script -->
+<script>
+    function toggleConsultationMode(mode) {
+      const homeLabel = document.getElementById('mode-home-label');
+      const clinicLabel = document.getElementById('mode-clinic-label');
+      const payableSummary = document.getElementById('payableSummary');
+      const radiusNotice = document.getElementById('radiusNotice');
+
+      if (mode === 'home') {
+        homeLabel.className = 'flex flex-col items-center justify-center py-2.5 px-3 rounded-lg cursor-pointer bg-surface-container-lowest text-primary shadow-sm transition-all text-center';
+        clinicLabel.className = 'flex flex-col items-center justify-center py-2.5 px-3 rounded-lg cursor-pointer text-on-surface-variant transition-all text-center hover:text-on-surface';
+        payableSummary.textContent = '₹850';
+        radiusNotice.textContent = '✓ Within 4.5 km service zone • Zero therapist travel surcharge';
+        radiusNotice.className = 'block text-[11px] font-label-sm text-tertiary mt-1';
+      } else {
+        clinicLabel.className = 'flex flex-col items-center justify-center py-2.5 px-3 rounded-lg cursor-pointer bg-surface-container-lowest text-primary shadow-sm transition-all text-center';
+        homeLabel.className = 'flex flex-col items-center justify-center py-2.5 px-3 rounded-lg cursor-pointer text-on-surface-variant transition-all text-center hover:text-on-surface';
+        payableSummary.textContent = '₹600';
+        radiusNotice.textContent = 'OrthoCare Clinic: 100ft Road, Indiranagar (Parking & Elevator Available)';
+        radiusNotice.className = 'block text-[11px] font-label-sm text-secondary mt-1';
+      }
+    }
+
+    function handleEnquirySubmission() {
+      const btn = document.getElementById('submitEnquiryBtn');
+      const successCard = document.getElementById('successCard');
+      const confirmedMode = document.getElementById('confirmedMode');
+      const isClinic = document.querySelector('input[name="consultation_mode"]:checked').value === 'clinic';
+
+      btn.disabled = true;
+      btn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span><span>Checking Dr. Ananya Slot...</span>';
+
+      setTimeout(() => {
+        confirmedMode.textContent = isClinic ? 'Clinic Consultation (₹600)' : 'Home Rehab Visit (₹850)';
+        successCard.classList.remove('hidden');
+        btn.disabled = false;
+        btn.innerHTML = '<span class="material-symbols-outlined text-[20px]">send</span><span>Send Direct Booking Enquiry (₹0)</span>';
+      }, 700);
+    }
+
+    function resetEnquiryForm() {
+      document.getElementById('successCard').classList.add('hidden');
+      document.getElementById('enquiryForm').reset();
+      toggleConsultationMode('home');
+    }
+
+    function handleWhatsAppDirect() {
+      const phone = '919876543210';
+      const text = encodeURIComponent('Namaste Dr. Ananya, I found your verified profile on Physio Sathi. I need a rehabilitation consultation in Indiranagar.');
+      window.open('https://wa.me/' + phone + '?text=' + text, '_blank');
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-margin-lg"><div class="max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg py-margin-md flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-col items-center md:items-start"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface">Physio Sathi</span><span class="font-label-sm text-label-sm text-on-surface-variant">(फ़िज़ियो साथी)</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-center md:text-left">Empowering Indian families with transparent, verified physical rehabilitation and home care.</p></div><div class="flex items-center gap-space-md font-label-md text-label-md text-on-surface-variant"><a class="hover:text-on-surface transition-colors" data-path="find-physio" href="#">Physiotherapists</a><a class="hover:text-on-surface transition-colors" data-path="equipment-hub" href="#">Rehab Rentals</a><a class="hover:text-on-surface transition-colors" data-path="cost-planner" href="#">Price Transparency</a><a class="hover:text-on-surface transition-colors" data-path="emergency-support" href="#">Support Helpline</a></div><div class="font-label-sm text-label-sm text-on-surface-variant text-center md:text-right">© 2025 Physio Sathi Healthcare Ltd. Built for empathetic recovery.</div></div></footer></body></html>

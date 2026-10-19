@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tertiary-container": "#008376", "surface-variant": "#d3e4fe", "outline-variant": "#bcc9cb", "on-tertiary-container": "#f4fffb", "on-error": "#ffffff", "primary-fixed-dim": "#67d6e4", "primary": "#00666f", "inverse-surface": "#213145", "tertiary-fixed-dim": "#6fd8c8", "secondary-fixed": "#d5e3ff", "primary-container": "#00818c", "error": "#ba1a1a", "surface-container-highest": "#d3e4fe", "on-primary-fixed": "#001f23", "on-secondary-fixed": "#001c3b", "on-primary": "#ffffff", "on-secondary": "#ffffff", "on-tertiary-fixed-variant": "#005048", "surface-tint": "#006972", "background": "#f8f9ff", "surface-container-low": "#eff4ff", "surface-container-high": "#dce9ff", "on-secondary-fixed-variant": "#314769", "tertiary": "#00685d", "on-error-container": "#93000a", "surface": "#f8f9ff", "error-container": "#ffdad6", "inverse-on-surface": "#eaf1ff", "secondary": "#495f82", "on-surface-variant": "#3d494a", "secondary-fixed-dim": "#b1c7f0", "on-background": "#0b1c30", "secondary-container": "#bfd5fe", "tertiary-fixed": "#8cf5e4", "inverse-primary": "#67d6e4", "surface-container": "#e5eeff", "on-tertiary": "#ffffff", "surface-dim": "#cbdbf5", "outline": "#6d797b", "on-primary-container": "#f6feff", "on-surface": "#0b1c30", "on-tertiary-fixed": "#00201c", "on-primary-fixed-variant": "#004f56", "primary-fixed": "#8df2ff", "surface-bright": "#f8f9ff", "on-secondary-container": "#465c7f", "surface-container-lowest": "#ffffff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1rem", "margin": "1rem", "gutter-lg": "2rem", "space-xl": "2.5rem", "gutter-md": "1.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-md": "2rem", "margin-lg": "3rem" }, fontFamily: { "label-sm": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, fontSize: { "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "700" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-lg": ["15px", { "lineHeight": "20px", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,37,69,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><img alt="Physio Sathi Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WmPUQgfTQAUUGhI44PrDknfBzGkJhdQWJoEP7TJfehN6XnXK6IkssvZ8zm-e6raLHWTgh349MSCJFUQN5iyjMEvA_hpO27jNm0EwtZC8BmqcpbR44dPYj5dEzXBxwQ1GRsWKnzNT0PYtLEsDjkXcq4qG6SE0txanBTdfSVi199N9-As5XzSLifyIES9EKKbmBvxz2C4-CYg9DTnO2uuMRFrGHzGOAUp7v8c-Gpor0sVSsqX-kNypTU3W8"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight hidden xs:inline">Physio Sathi</span></div><button class="flex items-center gap-space-xs bg-surface-container-low hover:bg-surface-container px-space-sm py-1.5 rounded-full min-h-[44px] transition-colors"><span class="material-symbols-outlined text-primary text-[18px]">location_on</span><span class="font-label-sm text-label-sm text-on-surface truncate max-w-[120px]">Indiranagar, BLR</span><span class="material-symbols-outlined text-outline text-[16px]">expand_more</span></button><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors text-on-surface-variant relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 bg-error rounded-full"></span></button><div class="w-11 h-11 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB97du81bDq88aOqizInqAMnzI51lgU9eJLNcBMMwNLlcWFJi4BsL8tJtpXoJneicERSQJ5eeq7zrkExe-P2fRY64hugTw9nQSA-ERMSuZO66jAClgXTXkUcSsjS-c0AQKvZfafW6ptG77LnOgOv-r6mIEsYcwuMYJgcDNW4fB8db09gDtFsUbO6f9P_Yu2PI4Cnx4M8CE9hgh5i2AjyZRchtnKLthejEo7jKiDk9_gV-AqZ1hJS3nv"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin pb-32">
+<!-- Demo State Switcher: Interactive Bar for Previewing All States -->
+<div class="w-full bg-surface-container-high rounded-xl p-space-xs mb-space-md shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant px-space-xs py-1 mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">tune</span>
+        Interactive Preview States
+      </span>
+<span class="font-label-sm text-[10px] text-outline">Tap to view edge cases</span>
+</div>
+<div class="grid grid-cols-4 gap-1" id="state-tabs">
+<button class="state-tab-btn py-2 px-1 rounded-lg font-label-sm text-center text-on-primary bg-primary shadow-sm transition-all" id="tab-active" onclick="switchFormState('active')">
+        Active Form
+      </button>
+<button class="state-tab-btn py-2 px-1 rounded-lg font-label-sm text-center text-on-surface-variant hover:bg-surface-container transition-all" id="tab-loading" onclick="switchFormState('loading')">
+        Loading Search
+      </button>
+<button class="state-tab-btn py-2 px-1 rounded-lg font-label-sm text-center text-on-surface-variant hover:bg-surface-container transition-all" id="tab-empty" onclick="switchFormState('empty')">
+        Empty State
+      </button>
+<button class="state-tab-btn py-2 px-1 rounded-lg font-label-sm text-center text-on-surface-variant hover:bg-surface-container transition-all" id="tab-error" onclick="switchFormState('error')">
+        Error State
+      </button>
+</div>
+</div>
+<!-- STATE 1: ACTIVE FORM CONTAINER -->
+<div class="flex flex-col w-full space-y-space-lg" id="view-active">
+<!-- Header Section with Bilingual Compassion Cue -->
+<div class="flex flex-col space-y-space-xs">
+<div class="flex items-center gap-space-xs text-tertiary">
+<span class="material-symbols-outlined text-[20px]">healing</span>
+<span class="font-label-sm text-label-sm tracking-wide uppercase">Caring • Verified • Local</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+        Find your Physiotherapy Match
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Tell us what you need in 60 seconds. No medical jargon.
+        <span class="block text-outline font-label-sm mt-0.5 italic">सही फिजियोथेरेपिस्ट ढूंढें, मात्र 1 मिनट में</span>
+</p>
+</div>
+<!-- Trust & Privacy Shield Banner -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-start gap-space-sm shadow-sm relative overflow-hidden">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div class="flex flex-col space-y-1">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface">100% Secure &amp; Non-Intrusive</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed font-label-sm px-2 py-0.5 rounded-full text-[10px]">HIPAA Aware</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          🔒 We don't ask for sensitive medical records or lab files. Just basic preferences to pair you with certified Indian Association of Physiotherapists (IAP) clinicians.
+        </p>
+</div>
+</div>
+<!-- Step Indicator Progress -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-xs">
+<div class="flex justify-between items-center text-on-surface">
+<span class="font-label-md text-label-md">Recovery Intake Progress</span>
+<span class="font-label-sm text-label-sm text-primary">Step 1 of 3</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full w-2/5 rounded-full transition-all duration-500"></div>
+</div>
+<div class="flex justify-between text-outline font-label-sm text-[11px] pt-1">
+<span class="text-primary font-semibold">1. Care Needs</span>
+<span>2. Matching Physios</span>
+<span>3. Transparent Cost</span>
+</div>
+</div>
+<!-- FORM SECTION 1: Locality / City -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex flex-col space-y-1">
+<label class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2" for="locality-input">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-surface-container text-primary font-label-sm">1</span>
+          Locality in Bengaluru
+        </label>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Where should the therapy take place?</span>
+</div>
+<!-- Location Input -->
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-primary text-[20px]">pin_drop</span>
+<input class="w-full h-12 pl-11 pr-10 rounded-lg bg-surface-container-low text-on-surface font-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all" id="locality-input" placeholder="Enter apartment, landmark, or PIN code" type="text" value="Indiranagar, Bengaluru (560038)"/>
+<button aria-label="Clear location" class="absolute right-3 top-3 text-outline hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+<!-- Quick Location Pill Chips -->
+<div class="flex flex-wrap gap-2 pt-1">
+<button class="h-9 px-3 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]">my_location</span>
+          Use Current Location
+        </button>
+<button class="h-9 px-3.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button">
+          Koramangala
+        </button>
+<button class="h-9 px-3.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button">
+          HSR Layout
+        </button>
+<button class="h-9 px-3.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button">
+          Whitefield
+        </button>
+</div>
+</div>
+<!-- FORM SECTION 2: Visit Type Preference -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex flex-col space-y-1">
+<label class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-surface-container text-primary font-label-sm">2</span>
+          Visit Type Preference
+        </label>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Choose how you'd like your treatment delivered</span>
+</div>
+<div class="space-y-space-sm" id="visit-type-group">
+<!-- Option A: Home Visit (Selected default) -->
+<label class="relative flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-low cursor-pointer shadow-sm transition-all visit-card" onclick="selectVisitType(this)">
+<input checked="" class="mt-1 w-5 h-5 text-primary accent-primary" name="visit_type" type="radio" value="home"/>
+<div class="flex flex-col space-y-1 flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface flex items-center gap-1.5">
+                🏡 Home Visit
+                <span class="bg-tertiary text-on-tertiary font-label-sm text-[10px] px-2 py-0.5 rounded-full">Most Popular</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Physio comes directly to your house with required modalities. Best for post-op, bed-rest, and seniors.
+            </p>
+<span class="font-label-sm text-primary text-[11px] pt-1">✓ No travel stress for family members</span>
+</div>
+</label>
+<!-- Option B: Clinic Visit -->
+<label class="relative flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer shadow-sm transition-all visit-card" onclick="selectVisitType(this)">
+<input class="mt-1 w-5 h-5 text-primary accent-primary" name="visit_type" type="radio" value="clinic"/>
+<div class="flex flex-col space-y-1 flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface">
+                🏥 Clinic / Centre Visit
+              </span>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[10px] px-2 py-0.5 rounded-full">Economical</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Visit a fully-equipped physiotherapy studio near Indiranagar. Access to heavy gait-trainers &amp; hydrotherapy.
+            </p>
+<span class="font-label-sm text-secondary text-[11px] pt-1">✓ 15-25% lower session costs</span>
+</div>
+</label>
+<!-- Option C: Both / Either -->
+<label class="relative flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer shadow-sm transition-all visit-card" onclick="selectVisitType(this)">
+<input class="mt-1 w-5 h-5 text-primary accent-primary" name="visit_type" type="radio" value="both"/>
+<div class="flex flex-col space-y-1 flex-1 min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface">
+              🔄 Both / Either is Fine
+            </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Show all certified options nearby with the earliest availability.
+            </p>
+</div>
+</label>
+</div>
+</div>
+<!-- FORM SECTION 3: Support Needed (Visual selectable pill tags) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex flex-col space-y-1">
+<label class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-surface-container text-primary font-label-sm">3</span>
+          Condition / Support Needed
+        </label>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Select all that apply to help us match the right specialty</span>
+</div>
+<div class="flex flex-wrap gap-2.5" id="condition-chips">
+<!-- Pill 1 (Active) -->
+<button class="condition-chip flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm transition-all" onclick="toggleChip(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">accessible</span>
+<span>Post-Surgery Rehab (Knee/Hip)</span>
+</button>
+<!-- Pill 2 (Active) -->
+<button class="condition-chip flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm transition-all" onclick="toggleChip(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">elderly</span>
+<span>Elderly Mobility &amp; Falls</span>
+</button>
+<!-- Pill 3 -->
+<button class="condition-chip flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all" onclick="toggleChip(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">airline_seat_recline_extra</span>
+<span>Back &amp; Spine Pain</span>
+</button>
+<!-- Pill 4 -->
+<button class="condition-chip flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all" onclick="toggleChip(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+<span>Stroke &amp; Neuro Rehab</span>
+</button>
+<!-- Pill 5 -->
+<button class="condition-chip flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all" onclick="toggleChip(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">sports_soccer</span>
+<span>Sports Injury Recovery</span>
+</button>
+<!-- Pill 6 -->
+<button class="condition-chip flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all" onclick="toggleChip(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">laptop_mac</span>
+<span>Neck &amp; Desk Ergonomic Pain</span>
+</button>
+<!-- Pill 7 -->
+<button class="condition-chip flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all" onclick="toggleChip(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">child_care</span>
+<span>Pediatric Developmental</span>
+</button>
+</div>
+<div class="flex items-center gap-2 text-outline font-label-sm text-[12px] pt-1">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>Not sure? Select the closest pain area or talk to AI Sathi.</span>
+</div>
+</div>
+<!-- FORM SECTION 4: Approximate Budget per session -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex flex-col space-y-1">
+<label class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-surface-container text-primary font-label-sm">4</span>
+          Budget per Session
+        </label>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Standard 45-60 min certified clinical session</span>
+</div>
+<!-- Presets -->
+<div class="grid grid-cols-2 gap-2" id="budget-presets">
+<button class="budget-pill h-12 rounded-xl bg-surface-container-low text-on-surface font-label-md flex items-center justify-center transition-all" onclick="selectBudget(this, '500')" type="button">
+          Under ₹600
+        </button>
+<button class="budget-pill h-12 rounded-xl bg-primary text-on-primary font-label-md flex items-center justify-center shadow-sm transition-all" onclick="selectBudget(this, '950')" type="button">
+          ₹600 - ₹1,000 ⭐
+        </button>
+<button class="budget-pill h-12 rounded-xl bg-surface-container-low text-on-surface font-label-md flex items-center justify-center transition-all" onclick="selectBudget(this, '1300')" type="button">
+          ₹1,000 - ₹1,500
+        </button>
+<button class="budget-pill h-12 rounded-xl bg-surface-container-low text-on-surface font-label-md flex items-center justify-center transition-all" onclick="selectBudget(this, '1800')" type="button">
+          ₹1,500+ (Specialists)
+        </button>
+</div>
+<!-- Interactive Range Slider -->
+<div class="space-y-2 pt-2">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-outline">Custom Target:</span>
+<span class="font-headline-sm text-headline-sm text-primary" id="budget-display">₹950 / visit</span>
+</div>
+<input class="w-full h-2 bg-surface-container rounded-lg appearance-none cursor-pointer accent-primary" id="budget-range" max="2500" min="400" oninput="updateBudgetSlider(this.value)" step="50" type="range" value="950"/>
+<div class="flex justify-between text-outline font-label-sm text-[11px]">
+<span>₹400 (Basic)</span>
+<span>₹1,200 (Avg)</span>
+<span>₹2,500+ (Senior MPT)</span>
+</div>
+</div>
+<!-- Transparent Benchmark Data Note -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">insights</span>
+<p class="font-body-sm text-[13px] text-on-surface-variant leading-snug">
+          Fair Pricing Guarantee: Average verified home visit in <strong class="text-on-surface">Indiranagar</strong> is <strong class="text-primary">₹800 - ₹1,200</strong> with no travel markup.
+        </p>
+</div>
+</div>
+<!-- FORM SECTION 5: Preferred Schedule & Urgency -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex flex-col space-y-1">
+<label class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-surface-container text-primary font-label-sm">5</span>
+          Schedule &amp; Urgency
+        </label>
+<span class="font-body-sm text-body-sm text-on-surface-variant">When would you like the first evaluation?</span>
+</div>
+<!-- Urgency Selector -->
+<div class="space-y-1.5">
+<span class="font-label-md text-label-md text-on-surface">How soon do you need support?</span>
+<div class="grid grid-cols-3 gap-2">
+<button class="h-11 px-2 rounded-lg bg-primary text-on-primary font-label-sm text-center flex flex-col items-center justify-center shadow-sm" type="button">
+<span>Immediate</span>
+<span class="text-[10px] opacity-90">Today / Tomorrow</span>
+</button>
+<button class="h-11 px-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-center flex flex-col items-center justify-center" type="button">
+<span>This Week</span>
+<span class="text-[10px] text-outline">Within 5-7 days</span>
+</button>
+<button class="h-11 px-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-center flex flex-col items-center justify-center" type="button">
+<span>Exploring</span>
+<span class="text-[10px] text-outline">Just planning</span>
+</button>
+</div>
+</div>
+<!-- Time Pills -->
+<div class="space-y-1.5 pt-1">
+<span class="font-label-md text-label-md text-on-surface">Preferred Time Window</span>
+<div class="grid grid-cols-2 gap-2">
+<button class="h-11 px-3 rounded-lg bg-surface-container text-primary font-label-md flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">wb_twilight</span>
+<span>Morning (7am - 11am)</span>
+</button>
+<button class="h-11 px-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">sunny</span>
+<span>Afternoon (11am - 4pm)</span>
+</button>
+<button class="h-11 px-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">bedtime</span>
+<span>Evening (4pm - 8pm)</span>
+</button>
+<button class="h-11 px-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">event_available</span>
+<span>Weekend Only</span>
+</button>
+</div>
+</div>
+</div>
+<!-- FORM SECTION 6: Optional Equipment Needed -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex items-start justify-between">
+<div class="flex flex-col space-y-1">
+<label class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-surface-container text-primary font-label-sm">6</span>
+            Equipment Delivery (Optional)
+          </label>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sanitized rentals brought with your physio</span>
+</div>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[11px] px-2.5 py-1 rounded-full">Save 20% Bundle</span>
+</div>
+<div class="grid grid-cols-2 gap-2.5">
+<!-- Equipment 1 -->
+<label class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input class="w-5 h-5 rounded text-primary accent-primary" type="checkbox"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Wheelchair</span>
+<span class="text-outline text-[11px]">From ₹45/day</span>
+</div>
+</label>
+<!-- Equipment 2 -->
+<label class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input checked="" class="w-5 h-5 rounded text-primary accent-primary" type="checkbox"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Walker / Rollator</span>
+<span class="text-outline text-[11px]">From ₹25/day</span>
+</div>
+</label>
+<!-- Equipment 3 -->
+<label class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input checked="" class="w-5 h-5 rounded text-primary accent-primary" type="checkbox"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">TENS Pain Unit</span>
+<span class="text-outline text-[11px]">From ₹30/day</span>
+</div>
+</label>
+<!-- Equipment 4 -->
+<label class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input class="w-5 h-5 rounded text-primary accent-primary" type="checkbox"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Knee CPM Machine</span>
+<span class="text-outline text-[11px]">Post-op passive motion</span>
+</div>
+</label>
+<!-- Equipment 5 -->
+<label class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input class="w-5 h-5 rounded text-primary accent-primary" type="checkbox"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Hospital Bed</span>
+<span class="text-outline text-[11px]">Manual / Motorized</span>
+</div>
+</label>
+<!-- Equipment 6 -->
+<label class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input class="w-5 h-5 rounded text-primary accent-primary" type="checkbox"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">None Needed</span>
+<span class="text-outline text-[11px]">Physio only</span>
+</div>
+</label>
+</div>
+</div>
+</div>
+<!-- STATE 2: LOADING SEARCH VIEW (Hidden by default) -->
+<div class="hidden flex-col w-full items-center justify-center py-16 px-space-md text-center space-y-space-md" id="view-loading">
+<div class="relative w-28 h-28 flex items-center justify-center">
+<!-- Animated Pulsing Therapy Orb -->
+<div class="absolute inset-0 rounded-full bg-primary-fixed-dim/30 animate-ping"></div>
+<div class="w-20 h-20 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-md relative z-10">
+<span class="material-symbols-outlined text-[36px] animate-spin" style="animation-duration: 3s;">rotate_right</span>
+</div>
+</div>
+<div class="space-y-space-xs max-w-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">Scanning Indiranagar &amp; 4km Radius...</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Matching with 18 certified orthopedic &amp; geriatric therapists available this week.
+      </p>
+</div>
+<!-- Live Step Simulation -->
+<div class="w-full max-w-xs bg-surface-container-lowest rounded-xl p-space-md space-y-space-xs shadow-sm text-left">
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Locality verified: Indiranagar 560038</span>
+</div>
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Filtering IAP-accredited clinicians</span>
+</div>
+<div class="flex items-center gap-2 text-secondary font-label-md text-label-md animate-pulse">
+<span class="material-symbols-outlined text-[18px]">radio_button_checked</span>
+<span>Checking TENS &amp; Walker equipment depots</span>
+</div>
+</div>
+<button class="text-primary font-label-md underline pt-2" onclick="switchFormState('active')">
+      Cancel &amp; edit requirements
+    </button>
+</div>
+<!-- STATE 3: EMPTY SEARCH VIEW (Hidden by default) -->
+<div class="hidden flex-col w-full items-center justify-center py-12 px-space-md text-center space-y-space-md" id="view-empty">
+<div class="w-24 h-24 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[48px]">search_off</span>
+</div>
+<div class="space-y-space-xs max-w-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface">No Exact Matches at this Budget</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        We couldn't find home-visit therapists offering hip-surgery rehab under ₹400 in your selected sector.
+      </p>
+</div>
+<!-- Helpful alternatives card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm w-full max-w-sm text-left space-y-space-sm">
+<span class="font-label-md text-label-md text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">lightbulb</span>
+        Recommended Adjustments:
+      </span>
+<ul class="text-on-surface-variant font-body-sm text-body-sm space-y-2 pl-1">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[16px] mt-0.5">add_circle</span>
+<span>Expand budget to <strong>₹700 - ₹900</strong> (unlocks 12 specialists)</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[16px] mt-0.5">add_circle</span>
+<span>Switch to <strong>Clinic Visit</strong> nearby (starts ₹500)</span>
+</li>
+</ul>
+<button class="w-full mt-2 h-11 rounded-lg bg-surface-container text-primary font-label-md hover:bg-surface-container-high transition-colors" onclick="switchFormState('active')">
+        Adjust Filters
+      </button>
+</div>
+<button class="text-secondary font-label-md text-body-sm" onclick="switchFormState('active')">
+      ← Return to Form
+    </button>
+</div>
+<!-- STATE 4: ERROR VIEW (Hidden by default) -->
+<div class="hidden flex-col w-full items-center justify-center py-12 px-space-md text-center space-y-space-md" id="view-error">
+<div class="w-20 h-20 rounded-full bg-error-container text-on-error-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[40px]">wifi_off</span>
+</div>
+<div class="space-y-space-xs max-w-xs">
+<h3 class="font-headline-md text-headline-md text-error">Unable to Connect</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        We couldn't reach the Indiranagar physio provider registry. Your inputs have been saved locally.
+      </p>
+</div>
+<div class="flex flex-col gap-2 w-full max-w-xs">
+<button class="h-12 w-full rounded-xl bg-primary text-on-primary font-label-lg shadow-sm hover:bg-primary-container transition-all" onclick="switchFormState('active')">
+        Try Searching Again
+      </button>
+<button class="h-12 w-full rounded-xl bg-surface-container text-on-surface font-label-lg hover:bg-surface-container-high transition-all" onclick="switchFormState('active')">
+        Edit Form Inputs
+      </button>
+</div>
+</div>
+<!-- Sticky Bottom Action Bar (Fixed at mobile bottom above app shell tab nav) -->
+<div class="fixed bottom-16 inset-x-0 z-40 bg-surface/95 backdrop-blur-xl px-margin py-3 shadow-[0_-4px_16px_rgba(11,37,69,0.08)]">
+<div class="max-w-md mx-auto flex flex-col items-center space-y-2">
+<!-- Primary Action CTA Button: 52px Touch Target -->
+<button class="w-full h-[52px] rounded-xl bg-primary hover:bg-primary-container active:scale-[0.99] text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md transition-all" onclick="switchFormState('loading')" type="button">
+<span>Find Nearby Physios &amp; Equipment</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<!-- Secondary Conversational Link with AI Sathi -->
+<div class="flex items-center gap-1.5">
+<span class="font-body-sm text-[13px] text-on-surface-variant">Prefer talking to someone?</span>
+<a class="font-label-md text-[13px] text-primary hover:underline flex items-center gap-1" href="#">
+          Chat with AI Sathi
+          <span class="material-symbols-outlined text-[15px]">smart_toy</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline JavaScript for micro-interactions & State Tabs -->
+<script>
+  function switchFormState(state) {
+    const states = ['active', 'loading', 'empty', 'error'];
+    states.forEach(s => {
+      const el = document.getElementById('view-' + s);
+      const tab = document.getElementById('tab-' + s);
+      if (s === state) {
+        if (el) el.classList.remove('hidden');
+        if (tab) {
+          tab.className = 'state-tab-btn py-2 px-1 rounded-lg font-label-sm text-center text-on-primary bg-primary shadow-sm transition-all';
+        }
+      } else {
+        if (el) el.classList.add('hidden');
+        if (tab) {
+          tab.className = 'state-tab-btn py-2 px-1 rounded-lg font-label-sm text-center text-on-surface-variant hover:bg-surface-container transition-all';
+        }
+      }
+    });
+
+    if (state === 'loading') {
+      setTimeout(() => {
+        // Auto-cycle simulation: after 3 seconds in demo, return to active
+      }, 3500);
+    }
+  }
+
+  function selectVisitType(card) {
+    const cards = document.querySelectorAll('.visit-card');
+    cards.forEach(c => {
+      c.classList.remove('bg-surface-container-low', 'shadow-sm');
+      c.classList.add('bg-surface-container-lowest');
+    });
+    card.classList.remove('bg-surface-container-lowest');
+    card.classList.add('bg-surface-container-low', 'shadow-sm');
+    const radio = card.querySelector('input[type="radio"]');
+    if (radio) radio.checked = true;
+  }
+
+  function toggleChip(button) {
+    const isSelected = button.classList.contains('bg-primary');
+    if (isSelected) {
+      button.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+      button.classList.add('bg-surface-container-low', 'text-on-surface');
+    } else {
+      button.classList.remove('bg-surface-container-low', 'text-on-surface');
+      button.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+    }
+  }
+
+  function selectBudget(button, amount) {
+    const pills = document.querySelectorAll('.budget-pill');
+    pills.forEach(p => {
+      p.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+      p.classList.add('bg-surface-container-low', 'text-on-surface');
+    });
+    button.classList.remove('bg-surface-container-low', 'text-on-surface');
+    button.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+    
+    const slider = document.getElementById('budget-range');
+    if (slider) slider.value = amount;
+    const display = document.getElementById('budget-display');
+    if (display) display.textContent = '₹' + amount + ' / visit';
+  }
+
+  function updateBudgetSlider(val) {
+    const display = document.getElementById('budget-display');
+    if (display) display.textContent = '₹' + val + ' / visit';
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(11,37,69,0.06)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs max-w-md mx-auto"><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-14 text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-[10px] leading-tight">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 w-16 h-14 transition-colors text-primary font-bold" data-path="find" href="#"><span class="material-symbols-outlined text-[24px]">stethoscope</span><span class="font-label-sm text-[10px] leading-tight">Find Physio</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-14 text-on-surface-variant transition-colors" data-path="equipment" href="#"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="font-label-sm text-[10px] leading-tight">Equipment</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-14 text-on-surface-variant transition-colors" data-path="planner" href="#"><span class="material-symbols-outlined text-[24px]">currency_rupee</span><span class="font-label-sm text-[10px] leading-tight">Cost Planner</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-14 text-on-surface-variant transition-colors" data-path="assistant" href="#"><span class="material-symbols-outlined text-[24px]">smart_toy</span><span class="font-label-sm text-[10px] leading-tight">AI Sathi</span></a></div></nav></body></html>

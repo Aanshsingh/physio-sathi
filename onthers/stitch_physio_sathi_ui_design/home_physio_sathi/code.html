@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tertiary-container": "#008376", "surface-variant": "#d3e4fe", "outline-variant": "#bcc9cb", "on-tertiary-container": "#f4fffb", "on-error": "#ffffff", "primary-fixed-dim": "#67d6e4", "primary": "#00666f", "inverse-surface": "#213145", "tertiary-fixed-dim": "#6fd8c8", "secondary-fixed": "#d5e3ff", "primary-container": "#00818c", "error": "#ba1a1a", "surface-container-highest": "#d3e4fe", "on-primary-fixed": "#001f23", "on-secondary-fixed": "#001c3b", "on-primary": "#ffffff", "on-secondary": "#ffffff", "on-tertiary-fixed-variant": "#005048", "surface-tint": "#006972", "background": "#f8f9ff", "surface-container-low": "#eff4ff", "surface-container-high": "#dce9ff", "on-secondary-fixed-variant": "#314769", "tertiary": "#00685d", "on-error-container": "#93000a", "surface": "#f8f9ff", "error-container": "#ffdad6", "inverse-on-surface": "#eaf1ff", "secondary": "#495f82", "on-surface-variant": "#3d494a", "secondary-fixed-dim": "#b1c7f0", "on-background": "#0b1c30", "secondary-container": "#bfd5fe", "tertiary-fixed": "#8cf5e4", "inverse-primary": "#67d6e4", "surface-container": "#e5eeff", "on-tertiary": "#ffffff", "surface-dim": "#cbdbf5", "outline": "#6d797b", "on-primary-container": "#f6feff", "on-surface": "#0b1c30", "on-tertiary-fixed": "#00201c", "on-primary-fixed-variant": "#004f56", "primary-fixed": "#8df2ff", "surface-bright": "#f8f9ff", "on-secondary-container": "#465c7f", "surface-container-lowest": "#ffffff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1rem", "margin": "1rem", "gutter-lg": "2rem", "space-xl": "2.5rem", "gutter-md": "1.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-md": "2rem", "margin-lg": "3rem" }, fontFamily: { "label-sm": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, fontSize: { "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "700" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-lg": ["15px", { "lineHeight": "20px", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,37,69,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><img alt="Physio Sathi Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WmPUQgfTQAUUGhI44PrDknfBzGkJhdQWJoEP7TJfehN6XnXK6IkssvZ8zm-e6raLHWTgh349MSCJFUQN5iyjMEvA_hpO27jNm0EwtZC8BmqcpbR44dPYj5dEzXBxwQ1GRsWKnzNT0PYtLEsDjkXcq4qG6SE0txanBTdfSVi199N9-As5XzSLifyIES9EKKbmBvxz2C4-CYg9DTnO2uuMRFrGHzGOAUp7v8c-Gpor0sVSsqX-kNypTU3W8"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight hidden xs:inline">Physio Sathi</span></div><button class="flex items-center gap-space-xs bg-surface-container-low hover:bg-surface-container px-space-sm py-1.5 rounded-full min-h-[44px] transition-colors"><span class="material-symbols-outlined text-primary text-[18px]">location_on</span><span class="font-label-sm text-label-sm text-on-surface truncate max-w-[120px]">Indiranagar, BLR</span><span class="material-symbols-outlined text-outline text-[16px]">expand_more</span></button><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors text-on-surface-variant relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 bg-error rounded-full"></span></button><div class="w-11 h-11 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB97du81bDq88aOqizInqAMnzI51lgU9eJLNcBMMwNLlcWFJi4BsL8tJtpXoJneicERSQJ5eeq7zrkExe-P2fRY64hugTw9nQSA-ERMSuZO66jAClgXTXkUcSsjS-c0AQKvZfafW6ptG77LnOgOv-r6mIEsYcwuMYJgcDNW4fB8db09gDtFsUbO6f9P_Yu2PI4Cnx4M8CE9hgh5i2AjyZRchtnKLthejEo7jKiDk9_gV-AqZ1hJS3nv"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-8">
+<!-- UI State Interactive Floating Switcher (Preview Simulator) -->
+<div class="sticky top-0 z-30 px-margin py-space-xs bg-surface/95 backdrop-blur-md">
+<div class="bg-surface-container-high p-1 rounded-full flex items-center justify-between text-on-surface shadow-sm max-w-sm mx-auto">
+<button class="flex-1 py-1 px-2.5 rounded-full font-label-sm text-label-sm text-center transition-all bg-primary text-on-primary shadow-xs" id="state-normal-btn" onclick="setUIState('normal')">
+        Normal
+      </button>
+<button class="flex-1 py-1 px-2.5 rounded-full font-label-sm text-label-sm text-center transition-all text-on-surface-variant hover:text-on-surface" id="state-loading-btn" onclick="setUIState('loading')">
+        Skeleton
+      </button>
+<button class="flex-1 py-1 px-2.5 rounded-full font-label-sm text-label-sm text-center transition-all text-on-surface-variant hover:text-on-surface" id="state-error-btn" onclick="setUIState('error')">
+        Error
+      </button>
+<button class="flex-1 py-1 px-2.5 rounded-full font-label-sm text-label-sm text-center transition-all text-on-surface-variant hover:text-on-surface" id="state-success-btn" onclick="setUIState('success')">
+        Success
+      </button>
+</div>
+</div>
+<!-- ERROR VIEW CONTAINER (Default hidden) -->
+<div class="hidden px-margin py-space-lg flex-col items-center text-center animate-fade-in" id="view-error">
+<div class="w-16 h-16 rounded-full bg-error-container text-on-error-container flex items-center justify-center mb-space-md shadow-sm">
+<span class="material-symbols-outlined text-[32px]">wifi_off</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Pincode network timeout</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mb-space-lg">
+      We couldn't fetch registered physiotherapists in Indiranagar right now. Please check your data connection.
+    </p>
+<button class="w-full max-w-xs min-h-[48px] bg-primary text-on-primary rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-md active:scale-95 transition-transform" onclick="setUIState('normal')">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+<span>Retry connection</span>
+</button>
+</div>
+<!-- SKELETON LOADING VIEW (Default hidden) -->
+<div class="hidden px-margin pt-space-md space-y-space-md animate-pulse" id="view-loading">
+<div class="h-6 w-3/4 bg-surface-container-high rounded-full mx-auto"></div>
+<div class="h-10 w-full bg-surface-container-high rounded-xl"></div>
+<div class="h-16 w-5/6 bg-surface-container-high rounded-xl mx-auto"></div>
+<div class="h-12 w-full bg-surface-container-high rounded-xl"></div>
+<div class="grid grid-cols-3 gap-space-xs pt-space-sm">
+<div class="h-28 bg-surface-container-high rounded-xl"></div>
+<div class="h-28 bg-surface-container-high rounded-xl"></div>
+<div class="h-28 bg-surface-container-high rounded-xl"></div>
+</div>
+<div class="h-44 w-full bg-surface-container-high rounded-2xl mt-space-md"></div>
+</div>
+<!-- SUCCESS TOAST/VIEW (Default hidden) -->
+<div class="hidden px-margin pt-space-md pb-space-lg flex-col items-center text-center animate-fade-in" id="view-success">
+<div class="w-16 h-16 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center mb-space-md shadow-md">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<span class="font-headline-md text-headline-md text-primary mb-space-xs">Care Plan Matched!</span>
+<span class="font-label-md text-label-md text-tertiary font-semibold mb-space-sm">घर पर परामर्श तय हुआ</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-space-lg">
+      Dr. Ananya Rao (MPT Ortho, 1.8 km) accepted your initial screening request for Knee Mobility Rehab.
+    </p>
+<div class="w-full bg-surface-container-lowest p-space-md rounded-2xl shadow-sm text-left mb-space-lg space-y-space-xs">
+<div class="flex justify-between items-center text-on-surface">
+<span class="font-label-md text-label-md text-secondary">Estimated Home Visit Fee</span>
+<span class="font-headline-sm text-headline-sm text-primary">₹950</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline">Includes pre-assessment, posture screening &amp; zero travel surcharges.</p>
+</div>
+<button class="w-full min-h-[48px] bg-primary text-on-primary rounded-xl font-label-lg text-label-lg shadow-md active:scale-95 transition-transform flex items-center justify-center" onclick="setUIState('normal')">
+      Back to Home
+    </button>
+</div>
+<!-- MAIN NORMAL VIEW -->
+<div class="flex flex-col w-full" id="view-normal">
+<!-- Hero Section -->
+<section class="px-margin pt-space-md pb-space-lg relative overflow-hidden">
+<!-- Decorative therapeutic background wave -->
+<div class="absolute -right-16 -top-16 w-56 h-56 rounded-full bg-surface-container-high/60 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-12 top-40 w-48 h-48 rounded-full bg-primary-fixed/20 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-start gap-space-sm">
+<!-- Trust Pill Banner -->
+<div class="inline-flex items-center gap-1.5 bg-surface-container-lowest px-space-sm py-1 rounded-full shadow-sm">
+<span class="text-xs">🇮🇳</span>
+<span class="font-label-sm text-label-sm text-primary font-bold tracking-normal">India's 1st Local Physio &amp; Rehab Finder</span>
+</div>
+<!-- Bilingual Brand Sub-tag -->
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-secondary tracking-wide">फ़िज़ियो साथी • Reassuring Recovery at Home</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display-lg-mobile text-display-lg-mobile text-on-surface tracking-tight mt-space-xs">
+          Find a nearby physio and the right equipment, <span class="text-primary underline decoration-primary-container decoration-4 underline-offset-4">without 20 phone calls</span>
+</h1>
+<!-- Subhead -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mt-1">
+          Personalized matching in minutes. Compare verified home visits, neighborhood clinics, and certified sanitized rehab rentals in your pincode.
+        </p>
+<!-- CTA Buttons Group (Full-touch friendly min 48px) -->
+<div class="flex flex-col sm:flex-row w-full gap-space-sm pt-space-sm">
+<a class="w-full min-h-[48px] px-space-md bg-primary hover:bg-primary-container text-on-primary rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-md active:scale-[0.98] transition-all" href="#recovery-grid">
+<span>Find support</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<button class="w-full min-h-[48px] px-space-md bg-surface-container-lowest hover:bg-surface-container text-primary rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-sm active:scale-[0.98] transition-all" onclick="triggerAIChat()">
+<span class="material-symbols-outlined text-[20px] text-tertiary" style="font-variation-settings: 'FILL' 1;">arrow_back_ios_new</span>
+<span>Chat with AI Sathi</span>
+<span class="text-[11px] font-normal text-secondary">(हिंदी / Eng)</span>
+</button>
+</div>
+<!-- Quick Stat Pill -->
+<div class="w-full mt-space-sm bg-surface-container-low p-space-sm rounded-xl flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-tertiary shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant leading-tight">
+<span class="font-bold text-on-surface">4,200+ Verified Physios</span> across Bengaluru, Delhi NCR, Mumbai &amp; Pune
+          </p>
+</div>
+</div>
+</section>
+<!-- Visual Image Spotlight Card (Humanist Care Experience) -->
+<section class="px-margin mb-space-lg">
+<div class="relative w-full h-44 rounded-2xl overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A caring female Indian physiotherapist in clinical scrub top gently guiding an elderly grandfather through knee mobility exercises at home in a bright sunlit Bangalore living room, warm therapeutic atmosphere, authentic Indian family home background, natural soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXt970-1_HqrRadOX_wVtaDAzYT4hcAOLZLS83mAtuowxbu_YbCfSK8V1SMzAR7f9BCMvjhzK20yT7CL2kaxFqcjoFCLQ1tZ58aAGQySLMg85VC21DOy_u5ai4akviDzHHqrwq_6c34HcpCZXaCDhNwOYm8vl41QdD8-Rw9X2shWCm-vDql14GH3HbYCkkK_y6AKFgJZicxWaSNtT1Gqtysmj9X2MhnuNj3LJ_jPEqwWmsZVMs9HEO"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-on-surface/20 to-transparent flex flex-col justify-end p-space-md text-on-primary">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed font-bold">Trusted Neighborhood Care</span>
+<p class="font-headline-sm text-headline-sm leading-snug">Empathetic bedside rehabilitation, calibrated for elderly comfort.</p>
+</div>
+</div>
+</section>
+<!-- How It Works Section (3 Clear Visual Steps with 16px cards) -->
+<section class="px-margin mb-space-xl">
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold">Care Journey</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">How Physio Sathi Works</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">3 सरल कदम</span>
+</div>
+<div class="space-y-space-sm">
+<!-- Step 1 -->
+<div class="p-space-md bg-surface-container-lowest rounded-2xl shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container text-primary flex items-center justify-center shrink-0 font-headline-sm text-headline-sm font-bold">
+            1
+          </div>
+<div class="flex-1 min-w-0">
+<h3 class="font-label-lg text-label-lg text-on-surface mb-0.5">Tell us your recovery need</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Input locality, home vs clinic preference, and targeted condition (knee arthroplasty, stroke rehabilitation, frozen shoulder, or work ergonomics).
+            </p>
+<div class="flex flex-wrap gap-1.5 mt-space-xs">
+<span class="bg-surface-container-low text-secondary font-label-sm text-[10px] px-2 py-0.5 rounded-full">Knee Rehab</span>
+<span class="bg-surface-container-low text-secondary font-label-sm text-[10px] px-2 py-0.5 rounded-full">Stroke Care</span>
+<span class="bg-surface-container-low text-secondary font-label-sm text-[10px] px-2 py-0.5 rounded-full">Back &amp; Neck</span>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="p-space-md bg-surface-container-lowest rounded-2xl shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shrink-0 font-headline-sm text-headline-sm font-bold">
+            2
+          </div>
+<div class="flex-1 min-w-0">
+<h3 class="font-label-lg text-label-lg text-on-surface mb-0.5">Compare verified local options</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Transparent per-session ₹ fees, verified therapist travel radius, and certified reviews from families living in your immediate locality.
+            </p>
+<div class="mt-space-xs inline-flex items-center gap-1 bg-surface-container-high px-2 py-1 rounded-md text-on-secondary-container">
+<span class="material-symbols-outlined text-[14px]">price_check</span>
+<span class="font-label-sm text-[11px]">Real fees upfront: ₹700 – ₹1,200/visit</span>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="p-space-md bg-surface-container-lowest rounded-2xl shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-tertiary-container text-on-tertiary-container flex items-center justify-center shrink-0 font-headline-sm text-headline-sm font-bold">
+            3
+          </div>
+<div class="flex-1 min-w-0">
+<h3 class="font-label-lg text-label-lg text-on-surface mb-0.5">Book or rent equipment</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Connect directly via WhatsApp or phone. Zero platform commission markups, sanitized device drops, and easy weekly rental extensions.
+            </p>
+<div class="mt-space-xs flex items-center gap-1.5 text-tertiary">
+<span class="material-symbols-outlined text-[16px]">sanitizer</span>
+<span class="font-label-sm text-[11px] font-semibold">100% Hospital-Grade Disinfection</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dual Benefit Tabs ("Why Patients Love Us" & "For Physiotherapists") -->
+<section class="px-margin mb-space-xl">
+<div class="bg-surface-container-low p-space-sm rounded-2xl">
+<!-- Interactive Segment Controller -->
+<div class="flex bg-surface-container p-1 rounded-xl mb-space-md">
+<button class="flex-1 min-h-[44px] py-1.5 px-space-xs rounded-lg font-label-md text-label-md text-center transition-all bg-surface-container-lowest text-primary shadow-xs font-bold" id="tab-patient-btn" onclick="toggleBenefitTab('patient')">
+            Why Patients Love Us
+          </button>
+<button class="flex-1 min-h-[44px] py-1.5 px-space-xs rounded-lg font-label-md text-label-md text-center transition-all text-on-surface-variant hover:text-on-surface" id="tab-physio-btn" onclick="toggleBenefitTab('physio')">
+            For Physiotherapists
+          </button>
+</div>
+<!-- Tab Content: Patient View -->
+<div class="space-y-space-sm p-space-xs" id="content-patient">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">phone_disabled</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Zero Phone Tag &amp; Unanswered Calls</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">View verified live calendars and direct clinician WhatsApp response windows.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[22px] mt-0.5">currency_rupee</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Upfront Honest Pricing</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Clear pricing without surprise travel distance surcharges or consultation shocks.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">badge</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Vetted Certified BPT/MPT Doctors</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Every clinician undergoes degree check and state council verification.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">health_and_safety</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Safe Home Visits for Seniors</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Geo-verified session starts and direct emergency contact sharing for peace of mind.</p>
+</div>
+</div>
+</div>
+<!-- Tab Content: Physio Provider View (Hidden by default) -->
+<div class="hidden space-y-space-sm p-space-xs" id="content-physio">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">near_me</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Cluster Home Visits Nearby</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Limit cases to a 3-5 km perimeter around your clinic or home to cut traffic fatigue.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[22px] mt-0.5">timer_off</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Eliminate Travel Dead-Time</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Treat 4 patients in the time you used to spend sitting in Indian metro traffic.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">handshake</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Direct Patient Connect &amp; Zero Deductions</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Retain 100% of your consulting fees paid directly to your clinic UPI ID.</p>
+</div>
+</div>
+<div class="pt-space-xs">
+<button class="w-full min-h-[44px] bg-secondary text-on-secondary rounded-xl font-label-md text-label-md flex items-center justify-center gap-1 shadow-sm">
+<span>Join as Verified Physio</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Recovery Tools Quick Access Grid -->
+<section class="px-margin mb-space-xl" id="recovery-grid">
+<div class="flex items-baseline justify-between mb-space-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface">Recovery Tools</h2>
+<span class="font-label-sm text-label-sm text-secondary">Free Utilities</span>
+</div>
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Tool 1: Smart Cost Calculator -->
+<a class="p-space-md bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow flex items-center justify-between group active:scale-[0.99]" href="#">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">calculate</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Smart Cost Calculator</h3>
+<span class="bg-primary-fixed text-on-primary-fixed text-[10px] font-label-sm px-1.5 py-0.2 rounded">Save ₹3k+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Compare Home Visits vs Clinic Packages vs Equipment Rental</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform">chevron_right</span>
+</a>
+<!-- Tool 2: Rehab Equipment Hub -->
+<a class="p-space-md bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow flex items-center justify-between group active:scale-[0.99]" href="#">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-2xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">wheelchair_pickup</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Rehab Equipment Hub</h3>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-label-sm px-1.5 py-0.2 rounded">Sanitized</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Rental CPM Knee Flexors, Wheelchairs, Walkers, &amp; TENS Units</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform">chevron_right</span>
+</a>
+<!-- Tool 3: Demo Physio Provider View -->
+<a class="p-space-md bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow flex items-center justify-between group active:scale-[0.99]" href="#">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-2xl bg-tertiary-fixed-dim text-on-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">medical_services</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Demo: Provider View</h3>
+<span class="bg-surface-variant text-on-surface-variant text-[10px] font-label-sm px-1.5 py-0.2 rounded">For Clinicians</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Simulate live neighborhood patient requests &amp; route clusters</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform">chevron_right</span>
+</a>
+</div>
+</section>
+<!-- Equipment Catalog Teaser Showcase -->
+<section class="px-margin mb-space-xl">
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold">Fast Rental Delivery</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Top Rehab Machines</h2>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">View all</span>
+</div>
+<!-- Compact 2-column grid for device rentals -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Item 1 -->
+<div class="bg-surface-container-lowest p-space-sm rounded-2xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-full h-24 rounded-xl overflow-hidden bg-surface-container mb-space-xs relative">
+<img class="w-full h-full object-cover" data-alt="A modern medical continuous passive motion CPM knee rehabilitation device on a clean white background, hospital equipment grade, clean clinical aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZTmSbVyfX-uDqC8-YCHGw3eIpxz8VsR78egIjO8EZBs6i4qyjgiIMllxZmPsDpharQceQOcfx4Sr7Y_j4HriQYUGeK7TSmJ24uZCbAkpqJdeU7fQ901BbTi5w9_mU1MAcvJOweNyg_1XCxmofCUTcJ4kGQOpwIOfsBV6vpM484Pj1GQFKAHSHKbn9KjVwG7-F3FgKGR8l_oKYTz4dSlhB7E_T-WKypope_vUF-skS4FGJLz5QB32R"/>
+<span class="absolute top-1 right-1 bg-surface-container-lowest/90 backdrop-blur-xs font-label-sm text-[10px] text-primary px-1.5 py-0.5 rounded-full">
+                ₹180/day
+              </span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block line-clamp-1">Knee CPM Machine</span>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Post-TKR Knee recovery</p>
+</div>
+<div class="mt-space-sm flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-[11px] text-tertiary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span> 4h Drop
+            </span>
+<button aria-label="Book Knee CPM Machine" class="w-7 h-7 rounded-full bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-lowest p-space-sm rounded-2xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-full h-24 rounded-xl overflow-hidden bg-surface-container mb-space-xs relative">
+<img class="w-full h-full object-cover" data-alt="Compact dual channel digital TENS electrical muscle stimulation machine with electrodes on a soft neutral surface, modern physical therapy tool" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9Xg2qxlC9ZohlemmMOgYxIUdjoiWOXYjpSj1DediZ7V6-Ra3oc7yKpNrg6EimMdRpZtQMzH-9M3L3v97QCbt_03le7mrh-LTBkISYro2D9w-T_QtVCJner7dRgeGrr8sg9lG0CA_UQQXrQJnVtTr6Yft10QlQqyQtfHHFGe-rDO2vGHimW9Dhkww79hH_4hr_eyYZIHdu7huzJ7JX07EbYUs3USdN90BQ2AcA21nYU5cjsCCJslec"/>
+<span class="absolute top-1 right-1 bg-surface-container-lowest/90 backdrop-blur-xs font-label-sm text-[10px] text-primary px-1.5 py-0.5 rounded-full">
+                ₹45/day
+              </span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block line-clamp-1">Digital TENS &amp; IFT</span>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Chronic nerve &amp; joint pain</p>
+</div>
+<div class="mt-space-sm flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-[11px] text-tertiary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span> 2h Drop
+            </span>
+<button aria-label="Book Digital TENS &amp; IFT" class="w-7 h-7 rounded-full bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust & Safety Verification Note -->
+<section class="px-margin mb-space-lg">
+<div class="p-space-md bg-surface-container-low rounded-2xl shadow-xs">
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold">100% Medical Privacy &amp; Credential Audit</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-relaxed">
+              We never demand sensitive medical diagnostic documents upfront. Every listed physiotherapist holds verified State Council licenses and Indian Association of Physiotherapists (IAP) registration.
+            </p>
+<div class="mt-space-sm flex items-center gap-space-sm font-label-sm text-label-sm text-secondary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">check_circle</span>
+                HIPAA &amp; DISHA Compliant
+              </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">verified</span>
+                IAP Certified
+              </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- AI Companion Teaser Floating Prompt Card -->
+<section class="px-margin mb-space-md">
+<div class="bg-gradient-to-br from-surface-container-lowest to-surface-container p-space-md rounded-2xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[22px]">smart_toy</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Unsure what care is needed?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ask AI Sathi for a free 2-min triage</span>
+</div>
+</div>
+<button class="min-h-[44px] px-space-md bg-primary text-on-primary rounded-xl font-label-sm text-label-sm flex items-center gap-1 shadow-xs active:scale-95 transition-transform" onclick="triggerAIChat()">
+<span>Start</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</section>
+</div>
+</div>
+<script>
+  function setUIState(state) {
+    const normalView = document.getElementById('view-normal');
+    const loadingView = document.getElementById('view-loading');
+    const errorView = document.getElementById('view-error');
+    const successView = document.getElementById('view-success');
+
+    const normalBtn = document.getElementById('state-normal-btn');
+    const loadingBtn = document.getElementById('state-loading-btn');
+    const errorBtn = document.getElementById('state-error-btn');
+    const successBtn = document.getElementById('state-success-btn');
+
+    // Hide all
+    normalView.classList.add('hidden');
+    loadingView.classList.add('hidden');
+    errorView.classList.add('hidden');
+    successView.classList.add('hidden');
+
+    // Reset button styles
+    [normalBtn, loadingBtn, errorBtn, successBtn].forEach(btn => {
+      btn.className = 'flex-1 py-1 px-2.5 rounded-full font-label-sm text-label-sm text-center transition-all text-on-surface-variant hover:text-on-surface';
+    });
+
+    if (state === 'normal') {
+      normalView.classList.remove('hidden');
+      normalBtn.className = 'flex-1 py-1 px-2.5 rounded-full font-label-sm text-label-sm text-center transition-all bg-primary text-on-primary shadow-xs font-bold';
+    } else if (state === 'loading') {
+      loadingView.classList.remove('hidden');
+      loadingBtn.className = 'flex-1 py-1 px-2.5 rounded-full font-label-sm text-label-sm text-center transition-all bg-primary text-on-primary shadow-xs font-bold';
+    } else if (state === 'error') {
+      errorView.classList.remove('hidden');
+      errorBtn.className = 'flex-1 py-1 px-2.5 rounded-full font-label-sm text-label-sm text-center transition-all bg-error text-on-error shadow-xs font-bold';
+    } else if (state === 'success') {
+      successView.classList.remove('hidden');
+      successBtn.className = 'flex-1 py-1 px-2.5 rounded-full font-label-sm text-label-sm text-center transition-all bg-tertiary text-on-tertiary shadow-xs font-bold';
+    }
+  }
+
+  function toggleBenefitTab(type) {
+    const patientContent = document.getElementById('content-patient');
+    const physioContent = document.getElementById('content-physio');
+    const patientBtn = document.getElementById('tab-patient-btn');
+    const physioBtn = document.getElementById('tab-physio-btn');
+
+    if (type === 'patient') {
+      patientContent.classList.remove('hidden');
+      physioContent.classList.add('hidden');
+      patientBtn.className = 'flex-1 min-h-[44px] py-1.5 px-space-xs rounded-lg font-label-md text-label-md text-center transition-all bg-surface-container-lowest text-primary shadow-xs font-bold';
+      physioBtn.className = 'flex-1 min-h-[44px] py-1.5 px-space-xs rounded-lg font-label-md text-label-md text-center transition-all text-on-surface-variant hover:text-on-surface';
+    } else {
+      physioContent.classList.remove('hidden');
+      patientContent.classList.add('hidden');
+      physioBtn.className = 'flex-1 min-h-[44px] py-1.5 px-space-xs rounded-lg font-label-md text-label-md text-center transition-all bg-surface-container-lowest text-primary shadow-xs font-bold';
+      patientBtn.className = 'flex-1 min-h-[44px] py-1.5 px-space-xs rounded-lg font-label-md text-label-md text-center transition-all text-on-surface-variant hover:text-on-surface';
+    }
+  }
+
+  function triggerAIChat() {
+    setUIState('success');
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(11,37,69,0.06)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs max-w-md mx-auto"><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 w-16 h-14 transition-colors text-primary font-bold" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-[10px] leading-tight">Home</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-14 text-on-surface-variant transition-colors" data-path="find" href="#"><span class="material-symbols-outlined text-[24px]">stethoscope</span><span class="font-label-sm text-[10px] leading-tight">Find Physio</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-14 text-on-surface-variant transition-colors" data-path="equipment" href="#"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="font-label-sm text-[10px] leading-tight">Equipment</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-14 text-on-surface-variant transition-colors" data-path="planner" href="#"><span class="material-symbols-outlined text-[24px]">currency_rupee</span><span class="font-label-sm text-[10px] leading-tight">Cost Planner</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-14 text-on-surface-variant transition-colors" data-path="assistant" href="#"><span class="material-symbols-outlined text-[24px]">smart_toy</span><span class="font-label-sm text-[10px] leading-tight">AI Sathi</span></a></div></nav></body></html>

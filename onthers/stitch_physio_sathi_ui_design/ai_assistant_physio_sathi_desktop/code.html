@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-container":"#bfd5fe","outline-variant":"#bcc9cb","on-tertiary-container":"#f4fffb","on-background":"#0b1c30","tertiary-fixed":"#8cf5e4","primary-container":"#00818c","error-container":"#ffdad6","on-primary-fixed-variant":"#004f56","on-secondary-container":"#465c7f","on-surface":"#0b1c30","primary-fixed-dim":"#67d6e4","background":"#f8f9ff","inverse-primary":"#67d6e4","on-primary-fixed":"#001f23","on-error":"#ffffff","secondary-fixed-dim":"#b1c7f0","on-secondary-fixed-variant":"#314769","surface-container-high":"#dce9ff","secondary-fixed":"#d5e3ff","surface":"#f8f9ff","tertiary":"#00685d","on-secondary-fixed":"#001c3b","surface-tint":"#006972","on-secondary":"#ffffff","inverse-on-surface":"#eaf1ff","on-error-container":"#93000a","error":"#ba1a1a","surface-container-lowest":"#ffffff","inverse-surface":"#213145","secondary":"#495f82","on-tertiary-fixed-variant":"#005048","on-surface-variant":"#3d494a","tertiary-fixed-dim":"#6fd8c8","surface-dim":"#cbdbf5","surface-container":"#e5eeff","on-tertiary":"#ffffff","primary-fixed":"#8df2ff","on-primary-container":"#f6feff","on-primary":"#ffffff","on-tertiary-fixed":"#00201c","surface-variant":"#d3e4fe","primary":"#00666f","surface-container-low":"#eff4ff","surface-container-highest":"#d3e4fe","surface-bright":"#f8f9ff","outline":"#6d797b","tertiary-container":"#008376"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"margin-md":"2rem","space-md":"1rem","gutter-lg":"2rem","space-sm":"0.5rem","space-xl":"2.5rem","gutter-md":"1.5rem","space-xs":"0.25rem",gutter:"1rem","space-lg":"1.5rem",margin:"1rem","margin-lg":"3rem"},fontFamily:{"display-lg":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"]},fontSize:{"display-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-lg":["15px",{lineHeight:"20px",fontWeight:"600"}],"headline-md":["22px",{lineHeight:"30px",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"16px",letterSpacing:"0.03em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"26px",fontWeight:"600"}],"display-lg-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"22px",fontWeight:"400"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"600"}],"body-sm":["14px",{lineHeight:"20px",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,37,69,0.06)]"><div class="h-20 max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg flex-shrink-0"><div class="flex items-center gap-space-sm cursor-pointer"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">healing</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-tight">Physio Sathi</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">फ़िज़ियो साथी • Rehab &amp; Care Companion</span></div></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-surface-container text-on-surface cursor-pointer hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-primary text-[18px]">location_on</span><span class="font-label-md text-label-md font-semibold text-on-surface">Indiranagar, Bengaluru</span><span class="material-symbols-outlined text-outline text-[16px]">expand_more</span></div></div><nav class="hidden lg:flex items-center gap-space-md" data-active-classes="bg-primary-container text-on-primary-container font-label-md text-label-md px-3 py-1.5 rounded-lg"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="home" href="#">Home</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="find-physio" href="#">Find Physio</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="equipment-hub" href="#">Equipment Hub</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="cost-planner" href="#">Cost Planner</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="ai-assistant" href="#">AI Assistant</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="clinician-demo-view" href="#">Clinician Demo View</a></nav><div class="flex items-center gap-space-md flex-shrink-0"><div class="hidden sm:flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-low text-tertiary cursor-pointer hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[16px] text-tertiary">call</span><div class="flex flex-col text-left"><span class="font-label-sm text-label-sm leading-none text-tertiary">Toll-Free Helpline</span><span class="font-label-md text-label-md font-bold leading-tight text-on-surface">1800-890-7497</span></div></div><button aria-label="Notifications" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center cursor-pointer shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-160px)]"><div class="flex flex-col w-full">
+<!-- Top Context Ribbon: AI Status & Language Toggle -->
+<div class="w-full bg-surface-container-low px-margin md:px-margin-md lg:px-margin-lg py-2.5">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex relative flex-shrink-0">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary absolute inset-0 animate-ping opacity-75"></span>
+</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Physio AI Sathi (क्लिनिकल साथी)</span>
+<span class="text-outline text-label-sm">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant hidden sm:inline">Active clinical guidance session • Bengaluru Node #BLR-88</span>
+</div>
+<div class="flex items-center gap-space-md">
+<!-- Bilingual toggle -->
+<div class="inline-flex items-center p-0.5 rounded-full bg-surface-container">
+<button class="px-3 py-1 rounded-full bg-surface-container-lowest shadow-sm font-label-sm text-label-sm text-primary font-bold">English</button>
+<button class="px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors">हिंदी (Hindi)</button>
+<button class="px-2.5 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors">ಕನ್ನಡ</button>
+</div>
+<div class="hidden lg:flex items-center gap-1 font-label-sm text-label-sm text-tertiary bg-surface-container-lowest px-2.5 py-1 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>IAP Protocol Verified</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main 3-Column Studio Workspace -->
+<div class="max-w-7xl mx-auto w-full px-margin md:px-margin-md lg:px-margin-lg py-space-md lg:py-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- ================= LEFT COLUMN: Chat History & Recovery Templates (3 cols) ================= -->
+<aside class="hidden lg:flex lg:col-span-3 flex-col gap-space-md">
+<!-- New Session CTA -->
+<button class="w-full flex items-center justify-between p-3.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container transition-all shadow-md group">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span class="font-label-lg text-label-lg font-bold">Start New Care Plan</span>
+</div>
+<span class="font-label-sm text-label-sm opacity-80 group-hover:translate-x-0.5 transition-transform">नया सत्र</span>
+</button>
+<!-- Active Chats & Recents -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-outline">Active Consultations</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold bg-primary-fixed/30 px-2 py-0.5 rounded-full">3 active</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<!-- Active Selected Session -->
+<div class="p-3 rounded-lg bg-surface-container text-on-surface cursor-pointer shadow-sm relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
+<div class="flex items-start justify-between gap-1">
+<span class="font-label-md text-label-md font-bold truncate">Post-TKR Knee Recovery</span>
+<span class="font-label-sm text-label-sm text-outline flex-shrink-0">Just now</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Indiranagar 560038 • CPM machine inquiry</p>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-semibold">Day 10</span>
+<span class="font-label-sm text-label-sm text-outline">Mother, 68 yrs</span>
+</div>
+</div>
+<!-- Session Item 2 -->
+<div class="p-3 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="flex items-start justify-between gap-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-primary transition-colors truncate">Stroke Rehab &amp; Mobility</span>
+<span class="font-label-sm text-label-sm text-outline flex-shrink-0">Yesterday</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Koramangala 4th Block • Neuro-Physio</p>
+<div class="flex items-center gap-1.5 mt-1.5">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-low text-secondary font-semibold">12 Sessions booked</span>
+</div>
+</div>
+<!-- Session Item 3 -->
+<div class="p-3 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="flex items-start justify-between gap-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-primary transition-colors truncate">Lumbar Traction &amp; TENS</span>
+<span class="font-label-sm text-label-sm text-outline flex-shrink-0">3d ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">HSR Layout • Disc Herniation</p>
+<div class="flex items-center gap-1.5 mt-1.5">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-low text-outline font-medium">Rental active</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Rapid Condition Presets -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center gap-1.5 mb-space-sm text-outline">
+<span class="material-symbols-outlined text-[18px]">local_hospital</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Quick Recovery Presets</span>
+</div>
+<div class="flex flex-col gap-2">
+<button class="w-full text-left p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md font-semibold">Hip Arthroplasty (THA)</div>
+<div class="font-label-sm text-label-sm text-outline">Walker &amp; Gait training rules</div>
+</div>
+<span class="material-symbols-outlined text-[16px] text-primary">arrow_forward</span>
+</button>
+<button class="w-full text-left p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md font-semibold">Frozen Shoulder (Stage 2)</div>
+<div class="font-label-sm text-label-sm text-outline">Mobilization protocols &amp; IFT</div>
+</div>
+<span class="material-symbols-outlined text-[16px] text-primary">arrow_forward</span>
+</button>
+<button class="w-full text-left p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md font-semibold">Bell's Palsy Facial Re-ed</div>
+<div class="font-label-sm text-label-sm text-outline">Neuromuscular stimulation</div>
+</div>
+<span class="material-symbols-outlined text-[16px] text-primary">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Trust Metric Badge -->
+<div class="bg-surface-container rounded-xl p-space-md text-on-surface">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">format_image_left</span>
+<span class="font-label-md text-label-md font-bold">Physio Sathi Guarantee</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">Zero hidden travel surcharges for in-home care within 5 km of assigned clinical zones.</p>
+</div>
+</aside>
+<!-- ================= CENTER COLUMN: Main Conversation Stream (6 cols) ================= -->
+<section class="lg:col-span-6 flex flex-col bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden min-h-[720px] relative">
+<!-- Chat Area Topbar -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between shadow-[0_1px_4px_rgba(11,37,69,0.04)] z-10">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[22px]">smart_toy</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Sathi Care Navigator</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-tertiary text-on-tertiary font-bold">Verified AI</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Prompting in English with Hindi clinical references</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Share plan with Family">
+<span class="material-symbols-outlined text-[19px]">share</span>
+</button>
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Download care summary PDF">
+<span class="material-symbols-outlined text-[19px]">download</span>
+</button>
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Clear consultation">
+<span class="material-symbols-outlined text-[19px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Chat Stream Scrollable Body -->
+<div class="flex-1 p-space-md lg:p-space-lg flex flex-col gap-space-lg overflow-y-auto">
+<!-- Time marker -->
+<div class="flex items-center justify-center">
+<span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container text-on-surface-variant">Today • 10:42 AM</span>
+</div>
+<!-- Message 1: AI Greeting -->
+<div class="flex items-start gap-space-sm max-w-[92%]">
+<div class="w-8 h-8 rounded-full bg-primary flex-shrink-0 flex items-center justify-center text-on-primary mt-1 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="p-space-md rounded-2xl rounded-tl-sm bg-surface-container text-on-surface shadow-sm">
+<p class="font-body-md text-body-md">
+<span class="font-headline-sm text-headline-sm block mb-1">Namaste Ramesh ji (नमस्ते).</span>
+                  I am Physio Sathi's clinical navigator. Tell me what your loved one or patient is experiencing, and I'll find nearby verified physiotherapists, compare home vs clinic costs, and check equipment rental availability.
+                </p>
+<div class="mt-2 text-outline font-label-sm text-label-sm italic">
+                  घर पर भौतिक चिकित्सा या क्लिनिक खर्च की तुलना के लिए मुझे बताइए।
+                </div>
+</div>
+<span class="font-label-sm text-label-sm text-outline ml-2">10:42 AM • Clinical AI Sathi</span>
+</div>
+</div>
+<!-- Message 2: User Inquiry -->
+<div class="flex items-start justify-end gap-space-sm max-w-[90%] self-end">
+<div class="flex flex-col items-end gap-1.5">
+<div class="p-space-md rounded-2xl rounded-tr-sm bg-primary text-on-primary shadow-sm">
+<p class="font-body-md text-body-md leading-relaxed">
+                  My mother (68 yrs) had Total Knee Replacement 10 days ago in Manipal Hospital. Sutures are out. Need home visit physio in Indiranagar 560038 and wondering if CPM machine rental is worth it.
+                </p>
+</div>
+<div class="flex items-center gap-1.5 mr-2">
+<span class="font-label-sm text-label-sm text-outline">10:43 AM</span>
+<span class="material-symbols-outlined text-[14px] text-tertiary">done_all</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex-shrink-0 flex items-center justify-center mt-1 font-bold font-label-md text-label-md">
+              RJ
+            </div>
+</div>
+<!-- Message 3: Assistant Response with Rich Interactive Cards -->
+<div class="flex items-start gap-space-sm w-full">
+<div class="w-8 h-8 rounded-full bg-primary flex-shrink-0 flex items-center justify-center text-on-primary mt-1 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+</div>
+<div class="flex flex-col gap-space-md w-full max-w-[94%]">
+<!-- Text Explanation -->
+<div class="p-space-md rounded-2xl rounded-tl-sm bg-surface-container text-on-surface shadow-sm">
+<p class="font-body-md text-body-md">
+                  I understand, Ramesh ji. Post-TKR Day 10 is a pivotal window for achieving initial 90° passive flexion before arthrofibrosis sets in. Because travel to a clinic causes joint inflammation and elevated pain scores right after suture removal, an in-home physio combined with a CPM flexor is strongly recommended by Manipal's ortho rehabilitation protocols.
+                </p>
+<p class="font-body-md text-body-md mt-2 font-semibold text-primary">
+                  Here is the vetted care bundle tailored for Indiranagar (560038):
+                </p>
+</div>
+<!-- Interactive Card 1: Matched Physio Mini-Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md">
+<div class="flex items-center justify-between pb-3">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-tertiary">Top Matched Orthopedic Specialist</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-semibold">Arrives in ~20 mins</span>
+</div>
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md pt-2">
+<div class="flex items-center gap-space-md">
+<img class="w-16 h-16 rounded-xl object-cover shadow-sm flex-shrink-0" data-alt="Warm and confident Indian female physiotherapist in clinical attire with stethoscope smiling gently in bright medical setting, authentic healthcare lighting, clinical teal accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjUM6mwybWKzWmX_ucj14GlCwOuxOglXFtA0wT2HnO5Fu1hclIIgP6c-GUIzlkiQ8K61ikwl0sz29n2vqgPxACuOUrgStRcM0qq6Np9UPEp9oNLPXvm3mSfvaPHha0END1k0-V7MOmosN9ECNUl45GHwKEkJgj6TL-5E8d6DV25rzR_zdlSmGsutz6RL9rzC_2MeBsKiL1vA5x4bBIGgww3S5e3Wg-ydyFREIab_TwM2sY0gI3k32v"/>
+<div>
+<div class="flex items-center gap-2">
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Dr. Ananya Rao, MPT</h4>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-secondary font-bold">9 Yrs Exp</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline">MPT Ortho &amp; Post-Op Knee Rehab • Reg #KA-24901</p>
+<div class="flex items-center gap-3 mt-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span> 4.9 (142 reviews)
+                        </span>
+<span>•</span>
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-primary">location_on</span> 1.2 km away (Indiranagar 100ft Rd)
+                        </span>
+</div>
+</div>
+</div>
+<div class="flex sm:flex-col items-end justify-between sm:justify-center w-full sm:w-auto gap-2 flex-shrink-0">
+<div class="text-left sm:text-right">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface">₹850 <span class="font-body-sm text-body-sm text-outline font-normal">/ session</span></div>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">Zero travel surcharge</span>
+</div>
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md font-bold transition-all shadow-sm flex items-center gap-1">
+<span>Book Home Visit</span>
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Card 2: Equipment Rental Option -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md">
+<div class="flex items-center justify-between pb-3">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">medical_services</span>
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-primary">Prescription-Ready Recovery Device</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium">Free Same-Day Delivery</span>
+</div>
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md pt-2">
+<div class="flex items-center gap-space-md">
+<img class="w-16 h-16 rounded-xl object-cover shadow-sm flex-shrink-0" data-alt="High quality medical grade continuous passive motion knee CPM machine device with digital display and padded leg cradle in clean sterile healthcare setup, soft daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe2cj7IBLSJv67R_noL74LyTD3jS0YJ8nevb4IjRhbxZqgQCuJpu78_wltMi_L_n_yxUZiFxf2xRcWBgg6Ousod-b34dZQWz9LvUBWeMgxQT_2lThC7BTtrKQzPClBmdMTBMAvp_-4iZHpMQyuHRSZKIUrK_9KoIc1ggx83lGoeo_KHaWk7SVKfEMUklhQAcEW7lY_r6ccrlSOmZE5DUoFhXi34SWqavkKFyJ3LhrZF__gHWqmWIwY"/>
+<div>
+<div class="flex items-center gap-2">
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Digital Continuous Passive Motion (CPM)</h4>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-tertiary font-bold">Auto-Calibrated</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline">0° to 120° Flexion Controller • Includes fresh sanitary soft-sleeve</p>
+<div class="flex items-center gap-2 mt-1.5 font-label-sm text-label-sm text-tertiary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">sanitizer</span>
+<span>Autoclave Swab Microbiologically Certified (Serial #CPM-BLR-109)</span>
+</div>
+</div>
+</div>
+<div class="flex sm:flex-col items-end justify-between sm:justify-center w-full sm:w-auto gap-2 flex-shrink-0">
+<div class="text-left sm:text-right">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface">₹2,800 <span class="font-body-sm text-body-sm text-outline font-normal">/ month</span></div>
+<span class="font-label-sm text-label-sm text-outline">or ₹180 / day flexi-rental</span>
+</div>
+<button class="px-4 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-bold transition-all shadow-sm flex items-center gap-1">
+<span>Reserve Equipment</span>
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Cost Comparison Transparency Pill -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm font-bold uppercase tracking-wider text-secondary">
+<span class="material-symbols-outlined text-[16px]">balance</span>
+<span>Transparent Cost Matrix (4 Weeks Recovery)</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold bg-surface-container-lowest px-2 py-0.5 rounded-full shadow-sm">Saves ₹1,960 net</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-1">
+<!-- Home Plan -->
+<div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-primary">Hybrid Home Plan</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">₹8,240</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-1">8 In-Home Physio Visits (₹6,800) + 4-Wk CPM Flexor (₹2,800 w/ combo rebate)</p>
+<div class="mt-2 flex items-center gap-1 text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Zero transit pain &amp; zero auto/cab charges</span>
+</div>
+</div>
+<!-- Clinic Plan -->
+<div class="bg-surface-container p-3 rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">In-Clinic Only</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface-variant">₹10,200</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-1">12 Clinic Sessions (₹7,200) + Avg Bengaluru Cab Transit (~₹3,000 for 12 rides)</p>
+<div class="mt-2 flex items-center gap-1 text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>~30 hours spent in traffic &amp; wheelchair transfers</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Mandatory Medical AI Disclaimer Banner -->
+<div class="flex items-start gap-2.5 p-3 rounded-xl bg-surface-container text-on-surface shadow-xs">
+<span class="material-symbols-outlined text-outline text-[18px] flex-shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-outline leading-snug">
+<strong class="text-on-surface font-semibold">Clinical Disclaimer:</strong> I am an assistive recovery navigator and cannot diagnose pathology or prescribe medication. A qualified IAP physiotherapist must assess joint range of motion (ROM) and surgical incision healing in person before initiation.
+                </p>
+</div>
+<span class="font-label-sm text-label-sm text-outline ml-2">10:44 AM • Verified by Bangalore Ortho Guidelines</span>
+</div>
+</div>
+<!-- Quick Suggestion Action Chips -->
+<div class="flex flex-wrap items-center gap-2 pt-2">
+<span class="font-label-sm text-label-sm text-outline mr-1">Suggested replies:</span>
+<button class="px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all shadow-xs hover:scale-105">
+              Compare with Manipal clinic rates
+            </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all shadow-xs hover:scale-105">
+              Check Dr. Ananya's registration
+            </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all shadow-xs hover:scale-105">
+              Rent CPM machine for 2 weeks
+            </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-tertiary font-label-md text-label-md transition-all shadow-xs font-semibold">
+              Speak with human navigator (1800-890-7497)
+            </button>
+</div>
+</div>
+<!-- Chat Input Dock (Desktop Standard) -->
+<div class="p-space-md bg-surface-container-lowest shadow-[0_-2px_12px_rgba(11,37,69,0.06)] z-20">
+<form class="flex flex-col gap-2" onsubmit="event.preventDefault();">
+<!-- Active Input Field Row -->
+<div class="flex items-center gap-2 p-1.5 bg-surface rounded-xl shadow-xs">
+<button class="w-10 h-10 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" title="Attach prescription or discharge summary" type="button">
+<span class="material-symbols-outlined text-[20px]">attach_file</span>
+</button>
+<input class="flex-1 bg-transparent px-2 py-2 font-body-md text-body-md text-on-surface placeholder:text-outline outline-none" placeholder="Ask Sathi about rehab routines, pain levels, or therapists near Indiranagar... (हिंदी या English)" type="text" value="Can Dr. Ananya come tomorrow morning around 10:30 AM?"/>
+<button class="w-10 h-10 rounded-lg flex items-center justify-center text-primary hover:bg-surface-container transition-colors" title="Speak in Hindi, Kannada or English" type="button">
+<span class="material-symbols-outlined text-[22px]">mic</span>
+</button>
+<button class="px-5 h-10 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold transition-all shadow-sm flex items-center gap-1.5" type="submit">
+<span>Send</span>
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+<div class="flex items-center justify-between px-2">
+<div class="flex items-center gap-2 text-outline font-label-sm text-label-sm">
+<span class="inline-block w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Encrypted HIPAA-compliant Indian clinical pipeline</span>
+</div>
+<div class="font-label-sm text-label-sm text-outline">Press <kbd class="px-1.5 py-0.5 rounded bg-surface-container font-mono text-[11px] text-on-surface">Enter ↵</kbd> to transmit</div>
+</div>
+</form>
+</div>
+</section>
+<!-- ================= RIGHT COLUMN: Patient Context & Escalation (3 cols) ================= -->
+<aside class="lg:col-span-3 flex flex-col gap-space-md">
+<!-- Live Patient Extraction Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">psychology</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Sathi's Intake Log</h3>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-bold">Auto-updated</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mb-space-md">
+            Clinical context derived from current conversation and discharge notes.
+          </p>
+<!-- Structured Summary Metrics -->
+<div class="flex flex-col gap-space-sm">
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Patient Profile</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Female, 68 Years Old</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Post-TKR (Day 10)</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Discharge Hospital</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Manipal Hospital</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Sutures Out</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Service Location</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Indiranagar, BLR</span>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-mono">560038</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Prescribed Modality</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Knee Flexion CPM</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">0° - 90° Initial</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Target Budget</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">₹800 – ₹1,000</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Per Session</span>
+</div>
+</div>
+<!-- Action to edit criteria -->
+<button class="w-full mt-space-md py-2 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Edit Clinical Parameters</span>
+</button>
+</div>
+<!-- Recovery Milestone Mini Progress Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-outline">Knee Flexion Milestones</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">Goal: 110°</span>
+</div>
+<!-- Progress track -->
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden flex">
+<div class="bg-tertiary h-full w-[45%]" title="Current ROM: 45°"></div>
+<div class="bg-primary-fixed h-full w-[35%]" title="Target Phase 1: 90°"></div>
+</div>
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm mt-2">
+<span>0° (Ext)</span>
+<span class="text-tertiary font-bold">45° (Day 10)</span>
+<span>90° (Target Wk 3)</span>
+<span>120°</span>
+</div>
+</div>
+<!-- Emergency & Care Coordinator Hotline -->
+<div class="bg-primary text-on-primary rounded-xl p-space-md shadow-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-on-primary/10 flex items-center justify-center text-on-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold leading-tight">Need a Human Navigator?</h4>
+<p class="font-body-sm text-body-sm text-on-primary/80 mt-1">
+                Speak directly with a senior physiotherapy coordinator who coordinates doctor clearances.
+              </p>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-on-primary/15 flex items-center justify-between">
+<div>
+<div class="font-label-sm text-label-sm opacity-75">Toll-Free Helpline</div>
+<div class="font-headline-sm text-headline-sm font-bold tracking-wide">1800-890-7497</div>
+</div>
+<a class="px-3 py-2 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md font-bold hover:bg-surface transition-colors flex items-center gap-1 shadow-sm" href="tel:18008907497">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Call Now</span>
+</a>
+</div>
+<div class="mt-2 text-center">
+<span class="font-label-sm text-label-sm opacity-80">निःशुल्क सहायता • 8:00 AM – 9:00 PM IST</span>
+</div>
+</div>
+<!-- Verified Locality Quick-Switch -->
+<div class="bg-surface-container rounded-xl p-space-md text-on-surface">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">near_me</span>
+<span class="font-label-md text-label-md font-semibold">Bengaluru East Hub</span>
+</div>
+<button class="font-label-sm text-label-sm text-primary font-bold hover:underline">Change</button>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-1">Covering Indiranagar, Domlur, HAL 2nd Stage &amp; Old Airport Rd.</p>
+</div>
+</aside>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low mt-margin-lg"><div class="max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg py-margin-md flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-col items-center md:items-start"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface">Physio Sathi</span><span class="font-label-sm text-label-sm text-on-surface-variant">(फ़िज़ियो साथी)</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-center md:text-left">Empowering Indian families with transparent, verified physical rehabilitation and home care.</p></div><div class="flex items-center gap-space-md font-label-md text-label-md text-on-surface-variant"><a class="hover:text-on-surface transition-colors" data-path="find-physio" href="#">Physiotherapists</a><a class="hover:text-on-surface transition-colors" data-path="equipment-hub" href="#">Rehab Rentals</a><a class="hover:text-on-surface transition-colors" data-path="cost-planner" href="#">Price Transparency</a><a class="hover:text-on-surface transition-colors" data-path="emergency-support" href="#">Support Helpline</a></div><div class="font-label-sm text-label-sm text-on-surface-variant text-center md:text-right">© 2025 Physio Sathi Healthcare Ltd. Built for empathetic recovery.</div></div></footer></body></html>

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-container":"#bfd5fe","outline-variant":"#bcc9cb","on-tertiary-container":"#f4fffb","on-background":"#0b1c30","tertiary-fixed":"#8cf5e4","primary-container":"#00818c","error-container":"#ffdad6","on-primary-fixed-variant":"#004f56","on-secondary-container":"#465c7f","on-surface":"#0b1c30","primary-fixed-dim":"#67d6e4","background":"#f8f9ff","inverse-primary":"#67d6e4","on-primary-fixed":"#001f23","on-error":"#ffffff","secondary-fixed-dim":"#b1c7f0","on-secondary-fixed-variant":"#314769","surface-container-high":"#dce9ff","secondary-fixed":"#d5e3ff","surface":"#f8f9ff","tertiary":"#00685d","on-secondary-fixed":"#001c3b","surface-tint":"#006972","on-secondary":"#ffffff","inverse-on-surface":"#eaf1ff","on-error-container":"#93000a","error":"#ba1a1a","surface-container-lowest":"#ffffff","inverse-surface":"#213145","secondary":"#495f82","on-tertiary-fixed-variant":"#005048","on-surface-variant":"#3d494a","tertiary-fixed-dim":"#6fd8c8","surface-dim":"#cbdbf5","surface-container":"#e5eeff","on-tertiary":"#ffffff","primary-fixed":"#8df2ff","on-primary-container":"#f6feff","on-primary":"#ffffff","on-tertiary-fixed":"#00201c","surface-variant":"#d3e4fe","primary":"#00666f","surface-container-low":"#eff4ff","surface-container-highest":"#d3e4fe","surface-bright":"#f8f9ff","outline":"#6d797b","tertiary-container":"#008376"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"margin-md":"2rem","space-md":"1rem","gutter-lg":"2rem","space-sm":"0.5rem","space-xl":"2.5rem","gutter-md":"1.5rem","space-xs":"0.25rem",gutter:"1rem","space-lg":"1.5rem",margin:"1rem","margin-lg":"3rem"},fontFamily:{"display-lg":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"]},fontSize:{"display-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-lg":["15px",{lineHeight:"20px",fontWeight:"600"}],"headline-md":["22px",{lineHeight:"30px",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"16px",letterSpacing:"0.03em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"26px",fontWeight:"600"}],"display-lg-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"22px",fontWeight:"400"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"600"}],"body-sm":["14px",{lineHeight:"20px",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,37,69,0.06)]"><div class="h-20 max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg flex-shrink-0"><div class="flex items-center gap-space-sm cursor-pointer"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">healing</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-tight">Physio Sathi</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">फ़िज़ियो साथी • Rehab &amp; Care Companion</span></div></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-surface-container text-on-surface cursor-pointer hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-primary text-[18px]">location_on</span><span class="font-label-md text-label-md font-semibold text-on-surface">Indiranagar, Bengaluru</span><span class="material-symbols-outlined text-outline text-[16px]">expand_more</span></div></div><nav class="hidden lg:flex items-center gap-space-md" data-active-classes="bg-primary-container text-on-primary-container font-label-md text-label-md px-3 py-1.5 rounded-lg"><a aria-current="page" class="transition-colors bg-primary-container text-on-primary-container font-label-md text-label-md px-3 py-1.5 rounded-lg" data-path="home" href="#">Home</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="find-physio" href="#">Find Physio</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="equipment-hub" href="#">Equipment Hub</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="cost-planner" href="#">Cost Planner</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="ai-assistant" href="#">AI Assistant</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-2" data-path="clinician-demo-view" href="#">Clinician Demo View</a></nav><div class="flex items-center gap-space-md flex-shrink-0"><div class="hidden sm:flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-low text-tertiary cursor-pointer hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[16px] text-tertiary">call</span><div class="flex flex-col text-left"><span class="font-label-sm text-label-sm leading-none text-tertiary">Toll-Free Helpline</span><span class="font-label-md text-label-md font-bold leading-tight text-on-surface">1800-890-7497</span></div></div><button aria-label="Notifications" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center cursor-pointer shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-160px)]"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO (Two-Column Asymmetric Canvas) -->
+<section class="relative w-full overflow-hidden bg-gradient-to-b from-surface via-surface-container-low/40 to-surface pb-16 pt-8">
+<!-- Subtle Ambient Glow -->
+<div class="pointer-events-none absolute -left-24 top-0 h-96 w-96 rounded-full bg-primary-fixed/30 blur-3xl"></div>
+<div class="pointer-events-none absolute -right-20 top-20 h-96 w-96 rounded-full bg-secondary-container/40 blur-3xl"></div>
+<div class="mx-auto max-w-7xl px-margin md:px-margin-md lg:px-margin-lg">
+<div class="grid grid-cols-12 gap-gutter-lg items-center">
+<!-- Left Column: Emotional Reassurance & Action -->
+<div class="col-span-12 lg:col-span-7 flex flex-col items-start gap-space-md z-10">
+<!-- Bilingual Context Pill -->
+<div class="inline-flex items-center gap-2 rounded-full bg-surface-container px-3.5 py-1.5 shadow-sm">
+<span class="text-base">🇮🇳</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wide">India's 1st Local Physio &amp; Rehab Finder</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">फ़िज़ियो साथी</span>
+</div>
+<!-- Master Headline -->
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight text-balance">
+            Find a nearby physio and the right equipment, <span class="text-primary italic">without 20 phone calls.</span>
+</h1>
+<!-- Body Copy -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl text-balance">
+            Verified home visits, trusted neighborhood clinics, and hospital-grade disinfected rehab rentals delivered right to your door within your pincode. No paperwork hurdles, no commission gouging.
+          </p>
+<!-- Action Cluster -->
+<div class="flex flex-wrap items-center gap-space-sm w-full pt-2">
+<a class="h-12 px-6 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm hover:bg-primary-container transition-all hover:shadow-md cursor-pointer" href="#quick-finder">
+<span class="material-symbols-outlined text-[20px]">search_check</span>
+              Find Support in Minutes
+            </a>
+<a class="h-12 px-5 rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-surface-container-high transition-colors cursor-pointer" data-path="ai-assistant" href="#">
+<span class="material-symbols-outlined text-primary text-[20px]">smart_toy</span>
+              Chat with AI Assistant (हिंदी / Eng)
+            </a>
+</div>
+<!-- Micro-Trust Metric Ribbon -->
+<div class="grid grid-cols-3 gap-space-sm pt-4 w-full max-w-xl">
+<div class="flex items-center gap-2 bg-surface-container-lowest/80 p-2.5 rounded-xl shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface leading-tight">4,200+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">IAP Verified</span>
+</div>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest/80 p-2.5 rounded-xl shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[18px]">sanitizer</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface leading-tight">100% Hospital</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Disinfected Gear</span>
+</div>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest/80 p-2.5 rounded-xl shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[18px]">lock_reset</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface leading-tight">Zero Prior</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Records Required</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Visual Depth Showcase -->
+<div class="col-span-12 lg:col-span-5 relative mt-6 lg:mt-0">
+<div class="relative w-full h-[460px] rounded-3xl overflow-hidden bg-surface-container shadow-xl">
+<img class="w-full h-full object-cover" data-alt="Warm and respectful photograph of an Indian certified physiotherapist gently assisting an elderly grandfather with knee rehabilitation exercises inside a sunlit Bangalore living room, soothing natural lighting, empathetic expressions, teal medical scrubs, high-resolution humanist documentary photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACx_oEZ0Y2Ot7GjbKY4g2aJTUuF7BVGg-jg_7pjFh4oyod5ZO7jENeERRRmkXtDR_iWIXfGh2bZEw53Mai7Hm-BgUdM_5etclc_otsL96FFd5TO20Uil2vY16eHng5B_XEjzzNDuHo1Esl5sq7mptB8bE6OEo7SsKLLUTqr-cDJ5TiHZNyqxO9LwdgCPh4upAMVgM3Rb3NyUTPYPduwWriqJIRqtkW0GibznGckplHK7JQhDIlY5MP"/>
+<!-- Subtle Gradient Scrim -->
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 via-transparent to-transparent"></div>
+<!-- Overlaid Float Card: Response Time -->
+<div class="absolute top-4 left-4 bg-surface-container-lowest/95 backdrop-blur-md px-3.5 py-2 rounded-2xl shadow-md flex items-center gap-2.5">
+<div class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-tertiary"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Indiranagar Response Time</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">~18 mins dispatch ready</span>
+</div>
+</div>
+<!-- Overlaid Float Card: Council Credentials -->
+<div class="absolute bottom-5 left-4 right-4 bg-surface-container-lowest/95 backdrop-blur-md p-3.5 rounded-2xl shadow-lg flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[22px]">badge</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Verified BPT / MPT Clinicians</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Indian Association of Physiotherapists Council Certified</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-tertiary bg-surface-container px-2.5 py-1 rounded-full">100% Vetted</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: INTERACTIVE QUICK FINDER BAR -->
+<section class="w-full -mt-8 z-20" id="quick-finder">
+<div class="mx-auto max-w-7xl px-margin md:px-margin-md lg:px-margin-lg">
+<div class="bg-surface-container-lowest rounded-2xl p-4 lg:p-6 shadow-xl flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">travel_explore</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Quick Local Physio Finder</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">(तुरंत स्थानीय फिजियो खोजें)</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px]">bolt</span> Real-time Local Availability
+          </span>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-3" onsubmit="event.preventDefault();">
+<!-- Locality Field -->
+<div class="lg:col-span-3 flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Your Locality / Pin</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">location_on</span>
+<input class="w-full h-12 pl-9 pr-3 rounded-xl bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container transition-all" placeholder="Enter locality or pincode" type="text" value="Indiranagar, Bengaluru"/>
+</div>
+</div>
+<!-- Condition Dropdown -->
+<div class="lg:col-span-3 flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Condition / Recovery Need</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">stethoscope</span>
+<select class="w-full h-12 pl-9 pr-8 rounded-xl bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container appearance-none cursor-pointer">
+<option selected="">Post-Surgery Knee/Hip Rehab</option>
+<option>Stroke &amp; Neuro Paralysis Care</option>
+<option>Geriatric Mobility &amp; Fall Prevention</option>
+<option>Frozen Shoulder / Cervical Spondylosis</option>
+<option>Sports Ligament Tear (ACL/Meniscus)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 text-outline pointer-events-none text-[18px]">unfold_more</span>
+</div>
+</div>
+<!-- Visit Type Selector -->
+<div class="lg:col-span-2 flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Care Location</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">home_health</span>
+<select class="w-full h-12 pl-9 pr-8 rounded-xl bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container appearance-none cursor-pointer">
+<option selected="">Home Visit (घर पर)</option>
+<option>Neighborhood Clinic</option>
+<option>Tele-Physio Video</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 text-outline pointer-events-none text-[18px]">unfold_more</span>
+</div>
+</div>
+<!-- Budget Range -->
+<div class="lg:col-span-2 flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Budget per Session</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">payments</span>
+<select class="w-full h-12 pl-9 pr-8 rounded-xl bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container appearance-none cursor-pointer">
+<option selected="">₹600 - ₹1,200</option>
+<option>₹1,200 - ₹1,800</option>
+<option>Packages under ₹8,000</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 text-outline pointer-events-none text-[18px]">unfold_more</span>
+</div>
+</div>
+<!-- Search CTA Button -->
+<div class="lg:col-span-2 flex items-end">
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-primary-container transition-all shadow-sm cursor-pointer">
+<span class="material-symbols-outlined text-[20px]">search</span>
+              Search
+            </button>
+</div>
+</form>
+<!-- Quick filter chips -->
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Popular Now:</span>
+<button class="px-2.5 py-1 rounded-full bg-surface text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container cursor-pointer transition-colors">TKR Rehab in Indiranagar</button>
+<button class="px-2.5 py-1 rounded-full bg-surface text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container cursor-pointer transition-colors">CPM Machine on Rent</button>
+<button class="px-2.5 py-1 rounded-full bg-surface text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container cursor-pointer transition-colors">Female Physio for Mother</button>
+<button class="px-2.5 py-1 rounded-full bg-surface text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container cursor-pointer transition-colors">Neuro-Rehab 10 Session Pack</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: HOW PHYSIO SATHI WORKS -->
+<section class="w-full py-20 bg-surface">
+<div class="mx-auto max-w-7xl px-margin md:px-margin-md lg:px-margin-lg">
+<div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-12">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider mb-2">Empathetic Recovery Process</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">How Physio Sathi Works for Indian Families</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Zero hassle, zero surprise costs, and zero anxiety. We have eliminated the medical maze.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-lg">
+<!-- Step 1 -->
+<div class="group relative flex flex-col bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+<div class="w-14 h-14 rounded-2xl bg-secondary-container text-on-secondary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[28px]">qr_code_2</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary tracking-wider uppercase mb-1">Step 01</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">1. Tell Us Your Recovery Need</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-1">
+            Input your local pincode, condition, and care preference. You never have to upload bulky hospital discharge files or share sensitive medical history to view transparent clinician rates.
+          </p>
+<div class="pt-4 mt-auto flex items-center gap-2 font-label-sm text-label-sm text-tertiary font-semibold">
+<span class="material-symbols-outlined text-[16px]">lock</span> 100% Confidential &amp; Rapid Match
+          </div>
+</div>
+<!-- Step 2 -->
+<div class="group relative flex flex-col bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+<div class="w-14 h-14 rounded-2xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[28px]">compare_arrows</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-tertiary tracking-wider uppercase mb-1">Step 02</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">2. Compare Verified Local Options</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-1">
+            Review certified clinicians within your 3km radius. View fixed fees between ₹700–₹1,200 per visit, actual clinical focus (e.g. stroke or joint rehab), and genuine verified family outcomes.
+          </p>
+<div class="pt-4 mt-auto flex items-center gap-2 font-label-sm text-label-sm text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">price_check</span> Transparent Pricing, Zero Hidden Fees
+          </div>
+</div>
+<!-- Step 3 -->
+<div class="group relative flex flex-col bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+<div class="w-14 h-14 rounded-2xl bg-primary-container text-on-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[28px]">local_shipping</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary-container tracking-wider uppercase mb-1">Step 03</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">3. Book or Rent Sanitized Equipment</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-1">
+            Connect instantly on WhatsApp directly with the physio. Need a CPM machine or ICU bed? Enjoy ₹0 platform markup with sanitized same-day home dispatch across your city.
+          </p>
+<div class="pt-4 mt-auto flex items-center gap-2 font-label-sm text-label-sm text-on-surface font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified</span> Same-Day Home Delivery Guaranteed
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: DUAL BENEFIT MATRIX (Patients vs Clinicians) -->
+<section class="w-full py-16 bg-surface-container-low">
+<div class="mx-auto max-w-7xl px-margin md:px-margin-md lg:px-margin-lg">
+<div class="flex flex-col items-center text-center max-w-xl mx-auto mb-10">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider mb-1">Fair &amp; Balanced Ecosystem</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Built with Equal Respect for Patients &amp; Doctors</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter-lg">
+<!-- Patient Panel -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-md flex flex-col">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">favorite</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Why Families &amp; Caregivers Trust Us</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">परिवारों के लिए पारदर्शी और सुरक्षित समाधान</span>
+</div>
+</div>
+<div class="space-y-4">
+<div class="flex items-start gap-3 p-3.5 rounded-2xl bg-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-tertiary text-[22px] shrink-0 mt-0.5">check_circle</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block">No Endless Phone Tag</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Skip calling 15 unverified clinic numbers. See live calendar openings and direct therapist profiles instantly.</span>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3.5 rounded-2xl bg-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-tertiary text-[22px] shrink-0 mt-0.5">check_circle</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block">Upfront Honest ₹ Pricing</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Clear per-visit cost shown before booking. No surge pricing, no surprise transportation surcharge under 3km.</span>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3.5 rounded-2xl bg-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-tertiary text-[22px] shrink-0 mt-0.5">check_circle</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block">Verified Council Credentials</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Every clinician's BPT/MPT registration is independently verified against the Indian Association of Physiotherapists registry.</span>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3.5 rounded-2xl bg-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-tertiary text-[22px] shrink-0 mt-0.5">check_circle</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block">Senior Safety Geo-Tracking</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Automatic WhatsApp visit tracking updates sent to adult children managing care remotely for elderly parents.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Clinician Panel -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-md flex flex-col">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[26px]">medical_services</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">For Physiotherapists &amp; Neighborhood Clinics</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">फिजियोथेरेपिस्ट के लिए सम्मानजनक मंच</span>
+</div>
+</div>
+<div class="space-y-4">
+<div class="flex items-start gap-3 p-3.5 rounded-2xl bg-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">check_circle</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block">Zero Commission Leech</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Unlike corporate aggregator apps that take 30–45% of your fees, Physio Sathi charges ₹0 commission on patient sessions.</span>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3.5 rounded-2xl bg-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">check_circle</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block">Hyper-Local Patient Clustering (&lt; 3km)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">No more cross-city traffic fatigue. Get patient requests strictly clustered within your immediate neighborhood.</span>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3.5 rounded-2xl bg-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">check_circle</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block">Direct WhatsApp &amp; Patient Relationship</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">You own the direct clinical relationship and payment pipeline. No middleman withholding your earnings.</span>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3.5 rounded-2xl bg-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">check_circle</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block">Equipment Rental Partnerships</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Prescribe certified medical equipment directly to your patients through our vetted logistics network.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: FEATURED REHAB EQUIPMENT GRID -->
+<section class="w-full py-20 bg-surface">
+<div class="mx-auto max-w-7xl px-margin md:px-margin-md lg:px-margin-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Sanitized Home Rehab Gear</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">Hospital-Grade Equipment on Rent &amp; Buy</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Disinfected to hospital standards, calibrated by biomedical engineers, delivered same-day.</p>
+</div>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-bold hover:text-primary-container transition-colors cursor-pointer" data-path="equipment-hub" href="#">
+          Browse Full Catalog (48+ Items) <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-lg">
+<!-- Equipment Item 1 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative h-48 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up photograph of a digital medical Continuous Passive Motion CPM knee machine for orthopedic rehabilitation in a spotless clean setup, soft ambient medical lighting, professional healthcare studio photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMF749nZ2yolJB2-EpUpgKQPCQmefkmshhBKCBovkVHIvnc5gfW4GT22NK_uEgguRFMUaLXRJJBseDwcf6c2pI3GGQjMyTu62tTxT3cMIH34nQxBR1auPpOimebKB1MMyTaEaZ6JOpnIwnp3ZMpjpbseEVFAgIhL30Mi0amYskSowtS3W46drX8dSBbGyTZlYc1xQjmoXFLAeKVk0su15WXIUSLvLwjdZHiyhE6WkRr89hhAP5q3Xf"/>
+<span class="absolute top-3 left-3 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-2.5 py-1 rounded-full font-bold">100% Disinfected</span>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex items-center justify-between text-outline text-label-sm font-label-sm mb-1">
+<span>Post-Op Knee Rehab</span>
+<span class="flex items-center text-tertiary"><span class="material-symbols-outlined text-[14px]">bolt</span> Ready in 4 hrs</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2">Digital CPM Knee Machine</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">Programmable 0°–120° angle continuous passive motion for post-TKR surgical recovery.</p>
+<div class="mt-auto pt-3 flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">₹180</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ day</span>
+</div>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-md text-label-md transition-colors cursor-pointer">
+                Rent Now
+              </button>
+</div>
+</div>
+</div>
+<!-- Equipment Item 2 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative h-48 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Lightweight chrome and midnight blue foldable patient wheelchair placed inside a warm living room environment with soft morning light, medical mobility aid photography, clean presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9poPhawtEpLbHMkJd7Jo8pZZXiSSUTGPk6xdVa1dpDBRjXQ2fRm71Q0s_CRYrStMmtzXTf_MvfnxcgjArDjqCG-O72qwKdv80aSik314lXZZ9Fr-UmyhyW54mAWFCEuq46k1wx3sn7ObxeNk75U8hwVcNknoP_MwmTZi0iy6mxHpcuSg-fl9JZ_OazvwS9FcWxy5TGCer011kB9kzc2-UNA4T9LWTrd0ZrdUIsQf4aOhkTrLLTqPE"/>
+<span class="absolute top-3 left-3 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2.5 py-1 rounded-full font-bold">Sanitized Seal</span>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex items-center justify-between text-outline text-label-sm font-label-sm mb-1">
+<span>Mobility Support</span>
+<span class="flex items-center text-tertiary"><span class="material-symbols-outlined text-[14px]">bolt</span> Same-Day</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2">Ergonomic Foldable Wheelchair</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">Cushioned armrests, dual-brakes, lightweight alloy frame fitting easily inside standard car trunks.</p>
+<div class="mt-auto pt-3 flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">₹45</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ day</span>
+</div>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-md text-label-md transition-colors cursor-pointer">
+                Rent Now
+              </button>
+</div>
+</div>
+</div>
+<!-- Equipment Item 3 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative h-48 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Clinical grade digital TENS and IFT physical therapy electrotherapy device with electrode pads neatly organized on a clean clinical surface, teal and slate colors, clean product shot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAfUHucoJ6R7fEGAaaazj10aKHR9QaoKxFzqhvGOHKOUMncsyTdCutq1OSHtqZvxBtTdrid_YidZkPZWo-0oG6q15ApIIczq11JnF7H8C8Elrl1TcvaFHSIPgJtFeF5GV8uKXtG1tBX_t3rcKz6pVJGYkGAMZlY2wlf1QO93tLh-bWH-AfNqYlvg-WEnaJVAT1TvVyGTDvCNkY6Lf99Z2OgapeQcWgvOTpt31PMm5jx5kqbh14JXQF"/>
+<span class="absolute top-3 left-3 bg-surface-container text-on-surface font-label-sm text-label-sm px-2.5 py-1 rounded-full font-bold">Buy Certified</span>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex items-center justify-between text-outline text-label-sm font-label-sm mb-1">
+<span>Pain Management</span>
+<span class="flex items-center text-secondary"><span class="material-symbols-outlined text-[14px]">shield</span> 1 Yr Warranty</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2">Digital 4-Channel TENS / IFT</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">Clinical pain relief for sciatica, lower back strain, and chronic muscle spasms with multi-wave modes.</p>
+<div class="mt-auto pt-3 flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">₹1,249</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">buy</span>
+</div>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-md text-label-md transition-colors cursor-pointer">
+                Order
+              </button>
+</div>
+</div>
+</div>
+<!-- Equipment Item 4 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative h-48 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Modern motorized hospital bed with wooden finish headboard and side rails, placed in a comfortable home care bedroom setting, soft daylight, respectful medical setup." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ5fDdGDSU0bTRtCSbaMZgAmRGjPI0qd0qm6oOJekEllVCnkARpOeFwuaDuXIuwhZ8vv0Yp2RH9ie8dVK-ISi-Oc00KG1qnu7mILp5PbMgzDw822I0SsqVtIjIq0VaVS94PgHpvTSkkldOV6tqXFJg9gJ47bvqBN5TSb4HMHydu4KozjbNcHDt6Tyf71bfXE881xuWO7pNlZwaFyGyKdmZpFgsAOgXBsGi3nZ9oxPPXnvgwFA3j_mN"/>
+<span class="absolute top-3 left-3 bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-2.5 py-1 rounded-full font-bold">Technician Demo</span>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex items-center justify-between text-outline text-label-sm font-label-sm mb-1">
+<span>Home ICU &amp; Recovery</span>
+<span class="flex items-center text-tertiary"><span class="material-symbols-outlined text-[14px]">build</span> Free Setup</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2">Motorized 3-Function Bed</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">Backrest, leg elevation, and overall height adjustment via wired remote control. Includes air-mattress option.</p>
+<div class="mt-auto pt-3 flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">₹350</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ day</span>
+</div>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-md text-label-md transition-colors cursor-pointer">
+                Rent Now
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: SMART RECOVERY COST CALCULATOR TEASER -->
+<section class="w-full py-12 bg-surface-container-low">
+<div class="mx-auto max-w-7xl px-margin md:px-margin-md lg:px-margin-lg">
+<div class="bg-surface-container-lowest rounded-3xl p-8 lg:p-12 shadow-md grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
+<div class="lg:col-span-6 flex flex-col gap-3">
+<div class="inline-flex items-center gap-2 text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">calculate</span>
+            Price Transparency Benchmark
+          </div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Know your 4-week recovery budget beforehand.</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-balance">
+            Compare total estimated expenses for home physiotherapy vs. clinic visits, including transport costs and equipment rental needs for standard protocols (TKR, Stroke, ACL).
+          </p>
+<div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+<a class="h-12 px-6 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-primary-container transition-all cursor-pointer" data-path="cost-planner" href="#">
+              Launch Cost Planner Tool
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<span class="font-label-sm text-label-sm text-on-surface-variant self-center">Based on 14,000+ local session benchmarks</span>
+</div>
+</div>
+<!-- Visual Mini Graph Preview -->
+<div class="lg:col-span-6 bg-surface-container p-6 rounded-2xl flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Example: Total Knee Replacement (4 Weeks)</span>
+<span class="font-label-sm text-label-sm font-bold text-tertiary bg-surface-container-lowest px-2.5 py-1 rounded-full">Save ~32% at Home</span>
+</div>
+<!-- Mini Inline Bar Visualization -->
+<div class="space-y-3 pt-2">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-semibold">Typical Hospital Outpatient (+ Cab Fares)</span>
+<span class="text-on-surface-variant">₹26,400</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-outline rounded-full w-[88%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-primary font-bold">Physio Sathi Verified Local Home Care Pack</span>
+<span class="text-primary font-bold">₹17,800</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary rounded-full w-[58%]"></div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 pt-3 border-t-0 bg-surface-container-lowest/80 p-3 rounded-xl text-center">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Sessions</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">16 Home Visits</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Gear Rental</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">14 Days CPM</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Discharge Pack</span>
+<span class="font-label-md text-label-md font-bold text-tertiary">₹0 Booking Fee</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: TRUST & SAFETY GUARANTEE BANNER -->
+<section class="w-full py-16 bg-surface">
+<div class="mx-auto max-w-7xl px-margin md:px-margin-md lg:px-margin-lg">
+<div class="rounded-3xl bg-inverse-surface text-inverse-on-surface p-8 lg:p-12 relative overflow-hidden shadow-xl flex flex-col lg:flex-row items-center justify-between gap-8">
+<!-- Decorative Ambient Vector -->
+<div class="pointer-events-none absolute -right-16 -top-16 h-72 w-72 rounded-full bg-primary-container/20 blur-2xl"></div>
+<div class="flex flex-col gap-3 max-w-2xl z-10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed text-[24px]">verified</span>
+<span class="font-label-md text-label-md font-bold text-primary-fixed uppercase tracking-wide">Physio Sathi Family Safety Oath</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg font-bold tracking-tight">Need urgent recovery guidance for a parent?</h3>
+<p class="font-body-md text-body-md text-inverse-on-surface/80">
+            Our qualified rehabilitation triage officers are available 7 days a week to review physician instructions, match female/male therapists, or resolve emergency equipment needs.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row lg:flex-col items-center sm:items-stretch gap-3 z-10 w-full sm:w-auto">
+<a class="h-12 px-6 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-primary-container transition-all cursor-pointer whitespace-nowrap shadow-sm" href="tel:18008907497">
+<span class="material-symbols-outlined text-[20px]">call</span>
+            Call Toll-Free: 1800-890-7497
+          </a>
+<button class="h-12 px-6 rounded-xl bg-inverse-on-surface/10 hover:bg-inverse-on-surface/20 text-inverse-on-surface font-label-md text-label-md flex items-center justify-center gap-2 transition-colors cursor-pointer whitespace-nowrap">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]">chat</span>
+            WhatsApp Care Coordinator
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 8: DESKTOP DIRECTORY & CITY HUBS -->
+<section class="w-full py-12 bg-surface-container-low/50">
+<div class="mx-auto max-w-7xl px-margin md:px-margin-md lg:px-margin-lg">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter-lg pb-8">
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block mb-3">Bengaluru Hubs</span>
+<ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Indiranagar &amp; Domlur</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Koramangala &amp; HSR Layout</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Whitefield &amp; Marathahalli</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Jayanagar &amp; JP Nagar</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Malleshwaram &amp; Rajajinagar</a></li>
+</ul>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block mb-3">Delhi NCR &amp; Gurugram</span>
+<ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">DLF Phase 1-5 &amp; Golf Course</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">South Delhi (GK, Saket, Hauz Khas)</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Noida Sectors 50, 62, 137</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Dwarka &amp; West Delhi</a></li>
+</ul>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block mb-3">Mumbai &amp; Pune</span>
+<ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Bandra, Khar &amp; Santacruz</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Andheri West &amp; Juhu</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Powai &amp; Thane West</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Kothrud, Baner &amp; Aundh (Pune)</a></li>
+</ul>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block mb-3">Recovery Specializations</span>
+<ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Total Knee Replacement Protocol</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Post-Stroke Hemiplegia Care</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Geriatric Balance &amp; Gait Training</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Sports Physiotherapy &amp; Dry Needling</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Pediatric Developmental Therapy</a></li>
+</ul>
+</div>
+</div>
+<!-- Regulatory Medical Disclaimer -->
+<div class="pt-6 bg-surface-container p-4 rounded-2xl flex items-start gap-3">
+<span class="material-symbols-outlined text-outline text-[20px] shrink-0 mt-0.5">info</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface">Clinical Disclaimer:</strong> Physio Sathi (फ़िज़ियो साथी) is an independent discovery, transparency, and equipment facilitation platform. We connect certified physiotherapists with families. Physio Sathi does not provide direct medical diagnoses. Patients must always consult their treating orthopedic surgeon, neurologist, or primary physician prior to initiating physical therapy regimens.
+        </p>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low mt-margin-lg"><div class="max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg py-margin-md flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-col items-center md:items-start"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface">Physio Sathi</span><span class="font-label-sm text-label-sm text-on-surface-variant">(फ़िज़ियो साथी)</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-center md:text-left">Empowering Indian families with transparent, verified physical rehabilitation and home care.</p></div><div class="flex items-center gap-space-md font-label-md text-label-md text-on-surface-variant"><a class="hover:text-on-surface transition-colors" data-path="find-physio" href="#">Physiotherapists</a><a class="hover:text-on-surface transition-colors" data-path="equipment-hub" href="#">Rehab Rentals</a><a class="hover:text-on-surface transition-colors" data-path="cost-planner" href="#">Price Transparency</a><a class="hover:text-on-surface transition-colors" data-path="emergency-support" href="#">Support Helpline</a></div><div class="font-label-sm text-label-sm text-on-surface-variant text-center md:text-right">© 2025 Physio Sathi Healthcare Ltd. Built for empathetic recovery.</div></div></footer></body></html>
