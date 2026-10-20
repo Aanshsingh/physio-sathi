@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const api = axios.create({
     baseURL : import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
-    timeout: 4500,
+    timeout: 90000,
 })
 
 export function getErrorMessage(err, fallback = 'Something went wrong. Please try again.') {
@@ -11,6 +11,7 @@ export function getErrorMessage(err, fallback = 'Something went wrong. Please tr
   return err.response.data?.message || fallback
 }
 
-export const rupees = (n) => `u20B9${Number(n).toLocaleString('en-IN')}`
+const inr = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', minimumFractionDigits: 0, maximumFractionDigits: 2 })
+export const rupees = (n) => inr.format(Number(n))
 
 export default api
