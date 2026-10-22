@@ -369,6 +369,9 @@ data, and external services.
 
           💚 Final Note
 
+
+
+
 Physio Sathi explores how AI assistance, transparent cost planning,
 provider discovery, and external equipment research can work together
 to simplify rehabilitation-related decisions.
